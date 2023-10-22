@@ -1,0 +1,14 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 480px;
+    background-color: #f9f7cf;
+    padding: 15px;
+}
+
+header, footer{
+    background-color: #f2dcbb;
+    padding: 5px 15px;
+}

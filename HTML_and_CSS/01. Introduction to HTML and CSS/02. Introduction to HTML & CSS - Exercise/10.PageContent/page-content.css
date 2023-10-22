@@ -1,0 +1,26 @@
+html {
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #cccccc;
+}
+
+section {
+    margin-left: 20px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 24px;
+}
+
+header p {
+    font-size: 16px;
+    font-style: italic;
+}

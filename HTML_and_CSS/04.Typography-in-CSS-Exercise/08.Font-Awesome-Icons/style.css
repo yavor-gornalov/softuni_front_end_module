@@ -1,0 +1,86 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+body {
+    font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+nav {
+    width: 200px;
+    border: 1px solid #e3e3e3;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #f5f5f5;
+}
+
+li {
+    list-style-type: none;
+    line-height: 25px;
+    margin-left: -15px;
+}
+
+a {
+    text-decoration: none;
+    color: #c83025;
+}
+
+i {
+    width: 1.14em;
+    padding-right: 0.28em;
+}
+
+.basic-btn {
+    padding: 4px 12px;
+    line-height: 20px;
+    background-color: dimgrey;
+    color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.basic-btn.shopping {
+    background-color: #83a94c;
+}
+
+.basic-btn.info {
+    background-color: #008ed0;
+}
+
+.basic-btn.delete {
+    background-color: #cc4036;
+}
+
+/* CSS:
+    • Import font awesome link
+    • <body>:
+        ◦ Fonts: proxima-nova, "Helvetica Neue", Helvetica, Arial
+        ◦ Generic Font: sans-serif
+    • <nav>: 
+        ◦ Width: 200px
+        ◦ Solid border with size 1px and color #e3e3e3
+        ◦ Font size: 14px
+        ◦ Height of the line: 20px
+        ◦ Background color: #f5f5f5
+    • <li>:
+        ◦ None list style
+        ◦ Height of the line: 25px
+        ◦ Left margin: -15px
+    • <a>:
+        ◦ None text decoration
+        ◦ Text color #c83025
+    • <i>:
+        ◦ Width: 1.14em
+        ◦ Right padding: 0.28em
+For all the buttons:
+    • Top & bottom padding 4px 
+    • Left & right padding 12px
+    • Height of the line: 20px
+    • Text color: #ffffff
+    • Border color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
+    • Cursor: pointer
+For the button.shopping:
+    • Background color: #83a94c
+For the button.info:
+    • Background color: #008ed0
+For the button.delete:
+    • Background color: #cc4036 */

@@ -1,0 +1,85 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    width: 1280px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    padding: 2em 5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+blockquote {
+    border-left: 0.3em solid;
+    border-color: rgb(221, 221, 221);
+    color: gray;
+    font-style: italic;
+    padding-left: 2.5em;
+}
+
+blockquote p:first-of-type::before {
+    content: '"';
+}
+
+blockquote:has(.author) p:nth-last-child(2):not(.author)::after {
+    content: '"';
+}
+
+blockquote p:nth-last-child(1):not(.author):after {
+    content: '"';
+}
+
+blockquote p.author {
+    text-align: right;
+}
+
+blockquote p.author::before {
+    content: '—';
+    padding-right: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid gray;
+
+}
+
+thead {
+    background-color: darkgrey;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+ul ul {
+    list-style-type: disc;
+}
+
+ul ul ul {
+    list-style-type: circle;
+}

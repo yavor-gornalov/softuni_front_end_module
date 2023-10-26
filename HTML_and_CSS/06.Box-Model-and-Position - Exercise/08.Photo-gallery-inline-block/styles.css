@@ -1,0 +1,33 @@
+body {
+    padding: 5em;
+    background-color: hsl(0, 0%, 93%);
+    width: 1080px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+li {
+    width: 18rem;
+    display: inline-block;
+    background-color: #fff;
+    border: 0.4rem solid #000;
+    padding: 1rem;
+    vertical-align: middle;
+    margin: 0.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}

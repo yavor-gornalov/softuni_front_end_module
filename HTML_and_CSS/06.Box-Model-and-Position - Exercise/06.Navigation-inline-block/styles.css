@@ -1,0 +1,42 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body, main {
+    font-family: inherit;
+}
+.site-header {
+    border-bottom: 2px solid;
+    position: relative;
+}
+
+.site-title {
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.site-nav {
+    display: inline-block;
+}
+
+.site-nav ul {
+    list-style: none;
+}
+
+.site-nav li {
+    margin: 0em 1em;
+    display: inline-block;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color:darkcyan;
+    font-weight: bo;
+}
+
+.site-content h1 {
+    padding-top: 0.5em;
+}

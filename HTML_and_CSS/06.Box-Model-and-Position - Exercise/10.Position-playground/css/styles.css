@@ -1,0 +1,57 @@
+@import url(reset.css);
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+.viewport {
+    height: 100vh;
+    position: relative;
+}
+
+.viewport:nth-child(1) {
+    background: linear-gradient(90deg, rgba(28,133,246,1) 0%, rgba(86,255,181,1) 100%);
+}
+
+.viewport:nth-child(2) {
+    background: linear-gradient(90deg, rgba(194,28,246,1) 0%, rgba(255,121,86,1) 67%);
+}
+
+.card{
+    max-height: 80%;
+    max-width: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card .icon {
+    padding: 0 0.75em 0.75em 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color:azure;
+    font-size: 1.5em;
+}
+
+.card .inner-shaddow {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 5em 5em rgba(0, 0, 0, 0.5) inset;
+}
+
+
+.card .inner-shaddow:hover {
+    box-shadow: none;
+}
+

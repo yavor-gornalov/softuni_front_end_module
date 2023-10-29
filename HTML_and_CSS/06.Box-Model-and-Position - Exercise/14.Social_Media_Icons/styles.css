@@ -1,0 +1,38 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+.container {
+    font-size: 3rem;
+    padding: 3rem;
+
+}
+.container div {
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem;
+    padding: 0.5em;
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 50%;
+
+    display: inline-block;
+}
+
+.facebook:hover {
+    color: darkblue;
+}
+
+.twitter:hover {
+    color:darkturquoise;
+}
+
+.google:hover {
+    color:firebrick;
+}
+
+.linkedin:hover {
+    color:mediumblue;
+}
+
+.instagram:hover {
+    color: blueviolet;
+}

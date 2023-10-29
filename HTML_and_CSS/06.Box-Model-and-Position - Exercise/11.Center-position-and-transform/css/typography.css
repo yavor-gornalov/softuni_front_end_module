@@ -1,0 +1,32 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    padding: 1em;
+    margin: 1em auto;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-size: 18px;
+    padding: 1em 1em 0.5em 1em;
+}
+
+.content p{
+    font-size: 14px;
+    padding: 0 1.3em 0.5em 1.3em;
+    line-height: 1.4;
+}
+
+.button {
+    padding: 0.35em 0.75em 0.35em 0.75em;
+}

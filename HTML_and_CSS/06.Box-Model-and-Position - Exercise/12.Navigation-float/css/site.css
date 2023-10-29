@@ -1,0 +1,53 @@
+@import url(nav-bar.css);
+@import url(main-content.css);
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: Georgia, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    width: 1024px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+.site-header {
+    font-family: inherit;
+    line-height: 1.2;
+}
+
+a {
+    color: rgb(0, 102, 0);
+}
+
+.layout {
+    position: relative;
+}
+
+
+.site-main {
+    padding: 0 1em 0 1em;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.side-bar {
+    padding: 0 1em 0 1em;
+    position: absolute;
+    width: 30%;
+    top: 0;
+    left: 70%;
+}

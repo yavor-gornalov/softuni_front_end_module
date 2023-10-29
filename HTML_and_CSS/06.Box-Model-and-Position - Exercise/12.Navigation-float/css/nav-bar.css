@@ -1,0 +1,35 @@
+.site-header {
+    position: relative;
+}
+.site-header .site-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 1rem;
+}
+
+.site-header .site-title p {
+    padding-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+
+.site-header .site-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.site-header .site-nav ul{
+    list-style: none;
+}
+
+.site-header .site-nav li{
+    margin: 0em 0.75em 0em 0.75em;
+    padding-top: 0;
+    display: inline-block;
+}
+
+.site-header .site-nav a{
+    text-decoration: none;
+}

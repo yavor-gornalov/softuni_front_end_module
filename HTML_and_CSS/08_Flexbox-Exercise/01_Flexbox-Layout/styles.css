@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    padding: 5rem;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 1rem;
+}
+
+.container>* {
+    border: 1px solid;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    color: #000;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.site-header,
+.site-footer {
+    flex: 1 1 100%;
+}
+
+.site-main,
+.side-bar {
+    min-height: 50%;
+}
+
+.site-header {
+    min-height: 20%;
+}
+
+.site-footer {
+    min-height: 10%;
+}
+
+
+.site-main {
+    flex: 8 1 40rem;
+}
+
+.side-bar {
+    flex: 2 1 20rem;
+}

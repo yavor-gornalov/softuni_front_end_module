@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px / 1.5 sans-serif;
+}
+
+section>* {
+    border: 1px solid;
+    min-height: 15rem;
+}
+
+
+body {
+    background-color: gray;
+    margin: 0 auto;
+    padding: 1em 5em;
+}
+
+h1, h2, h3{
+    padding: 1em;
+    text-align: center;
+}
+
+ol {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    list-style-position: inside;
+    min-height: 7.5rem;
+    padding: 1em;
+    text-align: center;
+    flex: 1 0.5 20%;
+    border: 1px solid;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    padding: 2em;
+}
+
+.calendar {
+    min-height: 50%;
+    background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    /* min-height: 45vh; */
+}
+
+.weekdays, .weekend {
+    min-height: 15rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1 1 80%;
+}
+
+
+.notes {
+    flex: 1 1 20%;
+}
+
+.weekdays h3, .weekend h3, .weekdays ol, .weekend ol {
+    flex: 1 1 100%;
+}
+

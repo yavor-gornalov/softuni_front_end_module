@@ -4,6 +4,7 @@ html {
 
 .container {
     display: flex;
+    flex-direction: column;
     max-width: 15vw;
     max-height: 35rem;
     gap: 1em;
@@ -14,26 +15,22 @@ html {
 .container span {
     display: block;
     border: 1px solid black;
-    min-height: 1.5em;
-    min-width: 3em;
+    height: 1.5em;
+    width: 5em;
+    padding: 0.75em;
     text-align: center;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);    
 }
 
-span:nth-child(1)  { order: 1; color: red;}
-span:nth-child(3)  { order: 1; color: red;}
-span:nth-child(7)  { order: 1; color: red;}
-span:nth-child(10)  { order: 1; color: red;}
-span:nth-child(11)  { order: -1; color: red;}
-span:nth-child(2)  { order: 2; color: red;}
-/* span:nth-child(2)  { order: 1; }
-span:nth-child(3)  { order: 1; }
-span:nth-child(4)  { order: 1; }
-span:nth-child(5)  { order: 1; }
-span:nth-child(6)  { order: 1; }
-span:nth-child(7)  { order: 1; }
-span:nth-child(8)  { order: 1; }
-span:nth-child(9)  { order: 1; }
-span:nth-child(10) { order: 1; }
-span:nth-child(11) { order: 1; }
-span:nth-child(12) { order: 1; } */
+.container :nth-child(1)  { order: 9; }
+.container :nth-child(2)  { order: 2; }
+.container :nth-child(3)  { order: 10; }
+.container :nth-child(4)  { order: 4; }
+.container :nth-child(5)  { order: 8; }
+.container :nth-child(6)  { order: 7; }
+.container :nth-child(7)  { order: 11; }
+.container :nth-child(8)  { order: 5; }
+.container :nth-child(9)  { order: 6; }
+.container :nth-child(10)  { order: 12; }
+.container :nth-child(11)  { order: 1; }
+.container :nth-child(12)  { order: 3; }

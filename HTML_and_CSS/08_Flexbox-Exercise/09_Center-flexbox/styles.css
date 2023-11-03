@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 16px / 1.25 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0.5rem;
+}
+
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h1,
+h2,
+h3 {
+    padding: 1rem 1rem 0.25rem 1rem;
+}
+
+.card p {
+    padding: 0.25rem 1rem 1rem 1rem;
+}
+
+.card {
+    max-width: 20rem;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.25);
+}

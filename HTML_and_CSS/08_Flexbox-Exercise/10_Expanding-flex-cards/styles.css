@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    width: 50%;
+    gap: 1em;
+    justify-content: center;
+}
+
+.image {
+    height: 25em;
+    width: 10em;
+    flex-shrink: 1;
+    overflow: hidden;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em 0.5em rgba(0,0,0,0.25);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s ease-in-out;
+}
+
+.image:hover {
+    width: 50em;
+}
+
+img {
+    display: block;
+    height: 100%;
+    width: auto;
+}

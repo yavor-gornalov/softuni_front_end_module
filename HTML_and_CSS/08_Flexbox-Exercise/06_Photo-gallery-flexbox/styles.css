@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: 70vw;
+    padding: 5em;
+    margin: 2em auto;
+    background-color: #eee;
+}
+
+body, ul, li{
+    display: flex;
+    
+}
+
+ul {
+    flex-wrap: wrap;
+    justify-content:space-between;
+    gap: 2em;
+}
+
+li {
+    list-style-type: none;
+    padding: 2em 1em;
+    border: 1px solid black;
+    box-shadow: 0.25em 0.25em 0.5em 0.25em rgba(0, 0, 0, 0.3),    
+    0.25em 0.25em 0.5em 0.25em rgba(0, 0, 0, 0.1) inset;    
+    align-items: center;    
+
+}
+
+li img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

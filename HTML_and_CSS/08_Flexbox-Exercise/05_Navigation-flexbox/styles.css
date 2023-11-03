@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px / 1.5 Helvetica, sans-serif;
+}
+
+
+body {
+    margin: 2em auto;
+    padding: 5em;
+    width: 65em;
+}
+
+.site-header {
+    display: flex;
+    border-bottom: 2px solid;
+    align-items: baseline;
+}
+
+.site-header .site-title {
+    flex: 1 1 35%;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding-bottom: 0.5em;
+}
+
+.site-header ul {
+    display: flex;
+    flex: 1 1 65%;
+    text-wrap: wrap;
+}
+
+.site-header li {
+    display: block;
+    list-style-type: none;
+    margin: 0 1em;
+}
+
+.site-header li a{
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+.article-title {
+    padding: 1.5em 0 1em 0;
+}
+
+.content p {
+    padding-bottom: 1.5em;
+}

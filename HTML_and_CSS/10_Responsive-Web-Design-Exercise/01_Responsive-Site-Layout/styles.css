@@ -1,0 +1,76 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px / 1.5 'Times New Roman', Times, serif;
+}
+
+@media (min-width: 500px) {html {font-size: 18px;}}
+@media (min-width: 850px) {html {font-size: 20px;}}
+@media (min-width: 1200px) {html {font-size: 22px;}}
+@media (min-width: 1600px) {html {font-size: 24px;}}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    min-height: 100vh;
+    padding: 0.5em;
+}
+
+.site-header,
+.menu,
+.tasks,
+.site-footer {
+    background-color: #74b9ff;
+    margin-left: 0;
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    gap: 0.5em;
+}
+
+.content .menu li {
+    display: block;
+    margin-right: 2em;
+}
+
+.content .menu li+li {
+    margin-top: 1em;
+}
+
+.content .tasks li {
+    list-style-position: inside;
+}
+
+.content .menu li a {
+    text-decoration: none;
+}
+
+.container .content .menu {
+    flex-grow: 0;
+}
+
+.container .content .tasks {
+    flex-grow: 1;
+}
+
+@media (max-width:500px) {
+    .content {
+        flex-direction: column;
+    }
+}

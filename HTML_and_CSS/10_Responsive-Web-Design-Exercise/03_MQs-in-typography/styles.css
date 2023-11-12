@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font: 12px / 1.5 Helvetica, serif;
+    box-sizing: border-box;
+}
+
+@media (min-width: 500px) {html {font-size: 14px;}}
+@media (min-width: 600px) {html {font-size: 16px;}}
+@media (min-width: 800px) {html {font-size: 18px;}}
+@media (min-width: 1300px) {html {font-size: 21px;}}
+@media (min-width: 1800px) {html {font-size: 23px;}}
+
+@media (max-width: 1000px) {.page {flex-direction: column;}}
+
+body {
+    min-height: 100vh;
+    max-width: 65em;
+    background-color: rgb(238, 238, 238);
+    margin: 1em auto;
+    padding: 2em 5em;
+}
+
+h1,
+h2,
+h3 {
+    font: 24px / 1.5 Georgia, serif;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.header {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 2px solid black;
+}
+
+
+li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-between;
+    
+}
+
+.side-bar {
+    margin-left: 2em;
+    flex: 1 1 15%;
+}
+
+.content {
+    margin-right: 2em;
+    flex: 1 1 75%;
+}
+
+.block {
+    display: flex;
+    padding: 1em 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content:space-between;
+}
+
+
+.block blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    float: right;
+    border-left: 0.25em solid rgb(96, 96, 96);
+    padding-left: 1em;
+}
+
+.block>p {
+    padding-right: 1em;
+}
+
+.block blockquote p:last-of-type {
+    text-align: right;
+}
+
+.block>* {
+    flex: 0.5 15em;
+    margin: 1em 0;
+}
+
+span[class*="inline"] {
+    display: flex;
+    align-items: center;
+    border: 0.25em solid;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.35);
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.inline-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.inline-right {
+    float: right;
+    margin-left: 1em;
+}

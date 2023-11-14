@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+html{
+    font: 12px / 1.5 'Times New Roman', Times, serif;
+}
+
 
 body {
     padding: 2em;
-    /* width: 55em;    */
+    min-width: 25em;
     min-height: 100vh;
     margin: 0 auto;
     max-width: 75em;
@@ -143,6 +147,6 @@ body {
 }
 
 
-@media screen and (max-width: 500px) {html {font-size: 12px;}
-@media screen and (max-width: 800px) {html {font-size: 14px;}
-@media screen and (max-width: 1000px) {html {font-size: 16px;}
+@media screen and (min-width: 500px) {html {font-size: 14px;}}
+@media screen and (min-width: 800px) {html {font-size: 16px;}}
+@media screen and (min-width: 1000px) {html {font-size: 18px;}}

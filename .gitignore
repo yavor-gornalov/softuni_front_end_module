@@ -1,0 +1,6 @@
+#ignored folders
+.vscode
+
+#ignored text documents
+*.pdf
+*.doc*

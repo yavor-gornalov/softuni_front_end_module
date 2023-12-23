@@ -1,15 +1,26 @@
 [
     {
-        "img":"https://www.ikea.com/PIAimages/0447583_PE597395_S5.JPG",
+        "img": "https://www.ikea.com/PIAimages/0447583_PE597395_S5.JPG",
         "name": "Sofa",
         "price": "259",
-        "decFactor":"0.4"
-
+        "decFactor": "0.4"
     },
     {
-        "img":"https://www.stylespafurniture.com/wp-content/uploads/2020/03/Cove_3_Door_Wardrobe_1.jpg",
+        "img": "https://www.stylespafurniture.com/wp-content/uploads/2020/03/Cove_3_Door_Wardrobe_1.jpg",
         "name": "Wardrobe",
         "price": "120",
-        "decFactor":"1.2"
+        "decFactor": "1.2"
+    },
+    {
+        "name": "Sofa",
+        "img": "https://res.cloudinary.com/maisonsdumonde/image/upload/q_auto,f_auto/w_200/img/grey-3-seater-sofa-bed-200-13-0-175521_9.jpg",
+        "price": "150",
+        "decFactor": "1.2"
+    },
+    {
+        "name": "Office chair",
+        "img": "https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg",
+        "price": "160",
+        "decFactor": "0.5"
     }
 ]

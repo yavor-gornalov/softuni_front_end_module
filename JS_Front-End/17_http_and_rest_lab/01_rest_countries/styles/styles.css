@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  font-family: "Open Sans", serif;
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  min-width: 25em;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  height: 100%;
+}
+
+.search {
+  flex: 0.1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+
+}
+
+.output {
+  flex: 0.9;
+  margin: 1em;
+}
+
+form input,
+button {
+  font-size: inherit;
+}
+
+textarea {
+  height: 100%;
+  width: 100%
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.25em 0.5em;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -6,8 +6,6 @@ function attachEvents() {
     const bookList = document.getElementById("bookList");
     const titleField = document.querySelector("#form input[name='title']");
     const authorField = document.querySelector("#form input[name='author']");
-    let _id = "";
-    let _currentRow = {};
 
     loadButton.addEventListener("click", (e) => {
         fetch(baseUrl)
@@ -35,16 +33,14 @@ function attachEvents() {
                 }),
             })
                 .then((res) => res.json())
-                .then((res) => {
-                    appendRecord(res._id, res.title, res.author);
-                })
-                .catch((err) => {
-                    console.log(err);
-                });
+                .then((res) => appendRecord(res._id, res.title, res.author))
+                .catch((err) => console.log(err));
         } else {
-            console.log(_id);
+            const book_id = formSubmitButton.id;
+            formSubmitButton.removeAttribute("id");
+            const currentRow = document.getElementById(book_id);
 
-            fetch(baseUrl + _id, {
+            fetch(baseUrl + book_id, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -53,11 +49,13 @@ function attachEvents() {
                     title,
                     author,
                 }),
-            }).then(() => {
-                _currentRow.children[0].textContent = title;
-                _currentRow.children[1].textContent = author;
-            });
-            _id = "";
+            })
+                .then(() => {
+                    currentRow.children[0].textContent = title;
+                    currentRow.children[1].textContent = author;
+                })
+                .catch((err) => console.log(err));
+
             formSubmitButton.textContent = "Submit";
             formTitle.textContent = "FORM";
         }
@@ -90,6 +88,7 @@ function attachEvents() {
         bookAuthor.textContent = author;
 
         const tableRow = document.createElement("tr");
+        tableRow.id = book_id;
         tableRow.appendChild(bookTitle);
         tableRow.appendChild(bookAuthor);
         tableRow.appendChild(bookActions);
@@ -108,19 +107,13 @@ function attachEvents() {
         });
 
         editButton.addEventListener("click", (e) => {
-            fetch(baseUrl + book_id, { method: "GET" })
-                .then((res) => res.json())
-                .then((data) => {
-                    titleField.value = data.title;
-                    authorField.value = data.author;
-                    _id = book_id;
-                    _currentRow = tableRow;
-                    formSubmitButton.textContent = "Save";
-                    formTitle.textContent = "Edit FORM";
-                })
-                .catch((err) => {
-                    console.log(err);
-                });
+            formTitle.textContent = "Edit FORM";
+            formSubmitButton.textContent = "Save";
+
+            titleField.value = bookTitle.textContent;
+            authorField.value = bookAuthor.textContent;
+
+            formSubmitButton.id = book_id;
         });
     }
 }

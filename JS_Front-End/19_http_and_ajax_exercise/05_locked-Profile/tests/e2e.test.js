@@ -3,8 +3,8 @@ const { expect } = require('chai');
 
 const host = 'http://localhost:3000'; // Application host (NOT service host - that can be anything)
 
-const DEBUG = true;
-const slowMo = 1000;
+const DEBUG = false;
+const slowMo = 500;
 
 const mockData = {
   profile: [
@@ -106,8 +106,6 @@ describe('E2E tests', function () {
       const post = await page.$$eval(`input[type="email"]`, (t) =>
         t.map((s) => s.value)
       );
-      console.log(data[0].email,'--------',post[0])
-      console.log(data[0].age,'--------',post[1])
       expect(post[0]).to.equal(data[0].email);
       expect(post[1]).to.equal(`${data[0].age}`);
     });

@@ -30,7 +30,7 @@ async function lockedProfile() {
             <label>Email:</label>
             <input type="email" name="user1Email" value="${user.email}" disabled readonly />
             <label>Age:</label>
-            <input type="text" name="user1Age" value="${user.age}" disabled readonly />
+            <input type="email" name="user1Age" value="31" disabled readonly />
         </div>
 		<button>Show more</button>`;
 

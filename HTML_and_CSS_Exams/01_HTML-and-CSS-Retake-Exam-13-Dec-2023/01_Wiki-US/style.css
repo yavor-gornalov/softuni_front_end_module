@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css2?family=Agbalumo&display=swap);
+
+html {
+    font: 14px Agbalumo, serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 50em;
+    box-sizing: inherit;
+    border: 2px solid;
+}
+
+article,
+.article-header,
+.footer-content {
+    padding: 0 2em 0 1em;
+}
+
+.article-header,
+.footer-content {
+    background-color: azure;
+}
+
+.article-header h1,
+.article-header p {
+    text-align: center;
+    border-bottom: 2px solid;
+    margin: 0;
+    padding: 0.5em 0.5em 0 0.5em;
+}
+
+
+article {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 0 2em 0;
+}
+
+
+.article-map {
+    flex: 0.4;
+    border: 2px solid;
+    padding: 0.5em 1em 0 0.5em;
+}
+
+.article-content {
+    flex: 0.6;
+    padding: 1.5em 2em 0 1.5em;
+}
+
+.article-map p {
+    font-size: 0.75em;
+    padding-top: 1em;
+}
+
+.article-footer {
+    margin-bottom: 0;
+}
+
+.article-footer h2 {
+    display: inline;
+    padding: 0 2em 0 2em;
+    background-color: black;
+    color: white;
+}
+
+.footer-content p:first-child,
+.footer-content p:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-content p:first-child {
+    padding-top: 1em;
+}
+
+.footer-content p:last-child {
+    padding-bottom: 1em;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+p {
+    text-indent: 2em;
+}

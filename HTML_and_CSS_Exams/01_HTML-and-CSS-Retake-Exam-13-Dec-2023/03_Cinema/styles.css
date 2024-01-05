@@ -1,0 +1,60 @@
+ul,
+nav,
+body,
+h1,
+h2,
+h4,
+h6,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.site-header,
+.site-description,
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    width: 55em;
+    min-height: 100vh;
+    margin: auto;
+    border: 2px solid;
+}
+.site-header {
+    align-items: baseline;
+}
+
+.site-description {
+    align-items: end;
+    margin: 1em;
+}
+
+.site-title {
+    border-right: 2px solid lightgrey;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+}
+/* .site-title, .site-creator */
+
+.nav-menu li {
+    display: block;
+    text-decoration: none;
+}

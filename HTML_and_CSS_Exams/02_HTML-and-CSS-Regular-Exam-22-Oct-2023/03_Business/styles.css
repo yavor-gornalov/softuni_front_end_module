@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+html {
+    box-sizing: border-box;
+    font: 14px / 1.5 'PT Sans', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 85em;
+    border: 1px solid red;
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.heading {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+.main-title{
+    font-size: 2.4em;
+}
+
+.caps {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.header-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 2/1;
+    overflow: hidden;
+    z-index: auto;
+}
+
+.header-background img {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    width: 100%;
+}
+
+
+
+.header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    aspect-ratio: 2/1;
+}
+
+
+.description-title,
+.site-nav {
+    flex: 1 1 40%;
+}
+
+.site-logo{
+    flex: 1 1 20%;
+    padding: 1em  ;
+    max-width: 100px;
+}
+
+.description-title {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    padding-bottom: 5em;
+}
+
+.site-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1em 0 1em;
+}
+
+
+
+.header-container,
+.main-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav li {
+    list-style: none;
+    display: block;
+    font-size: 80%  ;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0.5em 1em;
+}
+
+.site-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.site-container::before {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 2/1;
+    /* margin-top: 32.5em; */
+    /* background-image: url(images/background.jpg); */
+}
+
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3em;
+    border-bottom: 2px solid #cccccc;
+}
+
+
+.aim {
+    flex-basis: 40%;
+    padding: 2em;
+}
+
+.aim-title {
+    font-size: 2.2em;
+}
+
+.aim-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #b0825c;
+    font-weight: bold;
+    border: 1px solid;
+    padding: 0.5em 1em;
+}
+
+.sponsors {
+    text-align: center;
+    padding: 2em 10em;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    padding: 2em 0 1em 0;
+}
+
+.icon-container {
+    width: 15%;
+    padding: 1em;
+    background-color: #dddddd;
+    border-radius: 50%;
+}
+
+.icon-container img{
+    width: 100%;
+}
+
+.sponsors h2{
+    color: #b0825c;
+    margin-top:1em;
+}
+
+.sponsors:last-child{
+    padding-bottom: 2.5em;
+}

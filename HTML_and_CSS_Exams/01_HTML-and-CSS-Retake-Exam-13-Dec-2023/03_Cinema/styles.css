@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap';
+
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    font: 16px / 1.5 Ubuntu, sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* COMMON */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn,
+.btn-active {
+    display: block;
+    padding: 1em 1.5em;
+    margin: 0.05em;
+}
+
+.btn {
+    background-color: rgb(236, 236, 236);
+    color: rgb(105, 105, 105);
+
+}
+
+.btn-active,
+.site-description {
+    background-color: rgb(86, 219, 177);
+    color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    max-width: 85em;
+    margin: 0 auto;
+}
+
+
+/* HERO HEAD CSS */
+.main-nav {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5em 3em;
+}
+
+.site-logo {
+    align-items: baseline;
+}
+
+.site-title {
+    font-size: 300%;
+    border-right: 3px solid rgb(236, 236, 236);
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+
+}
+
+/* .hero-head::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 37.5em;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+} */
+
+.site-banner,
+.site-banner img {
+    height: 37.5em;
+}
+
+.site-banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* SECTION MAIN CSS */
+.site-description {
+    text-align: center;
+    padding: 3em 0;
+    font-size: ;
+}

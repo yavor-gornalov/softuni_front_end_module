@@ -1,0 +1,126 @@
+@import url('https://use.fontawesome.com/releases/v6.5.1/css/all.css');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 16px / 1.5 'Inter', sans-serif;
+}
+
+body {}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+p {
+    color: #595959;
+}
+
+article {
+    background-color: #fff;
+    padding: 3em;
+}
+
+/* TYPOGRAPHY */
+.comment .icon {
+    font-size: 3.5em;
+}
+
+.post .icon {
+    font-size: 6em;
+}
+
+.post, .comment {
+    box-shadow: 1em 1em 1em rgba(89,89,89,.5);
+}
+
+.site-container {
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.forum-container {
+    max-width: 100em;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 4em 8em;
+    margin: 0 auto;
+}
+
+.comments-container {
+    flex: 1 1 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    gap: 2em;
+}
+
+.posts-container {
+    flex: 1 1 33%
+}
+
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.author-picture {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    filter: grayscale();
+}
+
+.post {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.author-details {
+    margin-top: auto;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #595959;
+}
+
+.author-details .author-picture {
+    width: 6em;
+    height: 6em;
+    margin-right: 1em;
+}
+
+.author-details .job-title{
+    font-size: 0.7em;
+}
+
+.main-text {
+    padding: 2em 0;
+
+}
+
+.comment .main-text{
+    padding-right: 2em;
+}

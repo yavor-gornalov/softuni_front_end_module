@@ -1,0 +1,228 @@
+@import 'https://use.fontawesome.com/releases/v5.15.4/css/all.css';
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap';
+
+
+/* RESET CSS */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font: 18px / 1.5 'Inter', sans-serif;
+    background-color: #f3f5fa;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* TYPOGRAPHY CSS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 5.0em;
+}
+
+h2 {
+    font-size: 4.2em;
+}
+
+h3 {
+    font-size: 3.4em;
+}
+
+h4 {
+    font-size: 2.6em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.2em;
+}
+
+/* COLORS */
+.site-header,
+.about-us,
+.offer-list,
+.site-footer {
+    background-color: #ffffff;
+
+}
+
+.downloads,
+.mobile-app,
+.expand,
+.get-started,
+.act-btn-active,
+.get-price-btn,
+.plan-btn {
+    background-color: #ade2df;
+}
+
+/* BUTTONS  */
+.act-btn-active,
+.act-btn-passive{
+    padding: 1em 1.5em;
+    border-radius: .5em;
+    margin-right: .5em;
+}
+
+.download-btn {
+    display: block;
+    padding: 1em;
+    margin: .5em;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: .5em;
+    font-weight: bold;
+}
+.download-btn span {
+    margin-right: .5em;
+}
+
+/* HELPERS */
+.site-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* HEADER CSS */
+
+.site-header {
+    padding: 2em;
+}
+
+.main-nav {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.links-list li {
+    margin-right: 2.5em;
+}
+
+/* DOWNLOADS CSS */
+.downloads {
+    padding: 3em;
+    text-align: center;
+}
+
+.downloads h2 {
+    padding: .75em 0;
+}
+
+.btns-list {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0 2em 0;
+}
+
+/* ABOUT-US */
+.about-us {
+    padding: 5em 0;
+}
+
+.info-container {
+    justify-content: center;
+}
+
+.info-container::before {
+    content: "";
+    min-height: 15em;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-item h4 {
+    padding: .25em 0;
+}
+
+.info-item p {
+    margin: 0 2em;
+    padding-top: 1em;
+    font-size: 1.25em;
+}
+
+/* MOBILE-APP */
+.mobile-app-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.media {
+    width: 20em;
+    border-left: 1px dashed;
+    border-right: 1px dashed;
+}
+
+.media img {
+    width: 100;
+    height: auto;
+    /* object-fit: fill; */
+}
+
+.app-description {
+    margin: 0 5em;
+    max-width: 55ch;
+}
+
+.app-description h4{
+    padding: 1.5em 0;
+}
+
+.app-description h6 {
+    padding: .5em 0;
+}
+
+.explore-link {
+    display: block;
+    font-size: 1em;
+    text-decoration: underline;
+    padding: 2em 0;
+}

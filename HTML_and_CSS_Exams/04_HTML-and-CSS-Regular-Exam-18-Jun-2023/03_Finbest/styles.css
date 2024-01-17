@@ -4,12 +4,8 @@
 
 /* RESET CSS */
 html {
-    box-sizing: border-box;
-}
-
-body {
     font: 18px / 1.5 'Inter', sans-serif;
-    background-color: #f3f5fa;
+    box-sizing: border-box;
 }
 
 *,
@@ -36,47 +32,26 @@ img {
 }
 
 /* TYPOGRAPHY CSS */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
     font-weight: 600;
 }
 
-h1 {
-    font-size: 5.0em;
-}
-
-h2 {
-    font-size: 4.2em;
-}
-
-h3 {
-    font-size: 3.4em;
-}
-
-h4 {
-    font-size: 2.6em;
-}
-
-h5 {
-    font-size: 1.8em;
-}
-
-h6 {
-    font-size: 1.2em;
-}
+h1 { font-size: 5.0em; }
+h2 { font-size: 4.2em; }
+h3 { font-size: 3.4em; }
+h4 { font-size: 2.6em; }
+h5 { font-size: 1.8em; }
+h6 { font-size: 1.2em; }
 
 /* COLORS */
-.site-header,
-.about-us,
-.offer-list,
-.site-footer {
-    background-color: #ffffff;
+.pricing-plans {
+    background-color: #f3f5fa;
+    ;
+}
 
+.offers {
+    background-color: #ffffff;
 }
 
 .downloads,
@@ -91,13 +66,19 @@ h6 {
 
 /* BUTTONS  */
 .act-btn-active,
-.act-btn-passive{
+.act-btn-passive,
+.get-price-btn {
     padding: 1em 1.5em;
     border-radius: .5em;
     margin-right: .5em;
 }
 
-.download-btn {
+.get-price-btn {
+    display: block;
+}
+
+.download-btn,
+.get-started-btn {
     display: block;
     padding: 1em;
     margin: .5em;
@@ -106,8 +87,19 @@ h6 {
     border-radius: .5em;
     font-weight: bold;
 }
+
 .download-btn span {
+    border-radius: .15px;
     margin-right: .5em;
+}
+
+.plan-btn {
+    padding: .5em 1em;
+    border-radius: .5em;
+}
+
+*[class*="btn"] {
+    text-align: center;
 }
 
 /* HELPERS */
@@ -117,13 +109,14 @@ h6 {
 }
 
 .wrapper {
-    max-width: 80%;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /* HEADER CSS */
@@ -134,23 +127,22 @@ h6 {
 
 .main-nav {
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
-
-
 
 .links-list li {
     margin-right: 2.5em;
 }
 
 /* DOWNLOADS CSS */
-.downloads {
+.downloads,
+.get-started {
     padding: 3em;
     text-align: center;
 }
 
-.downloads h2 {
+.downloads h2,
+.get-started h2 {
     padding: .75em 0;
 }
 
@@ -177,6 +169,7 @@ h6 {
 
 .info-item {
     text-align: center;
+    flex: 0 0 27.5%;
 }
 
 .info-item h4 {
@@ -204,7 +197,6 @@ h6 {
 .media img {
     width: 100;
     height: auto;
-    /* object-fit: fill; */
 }
 
 .app-description {
@@ -212,7 +204,7 @@ h6 {
     max-width: 55ch;
 }
 
-.app-description h4{
+.app-description h4 {
     padding: 1.5em 0;
 }
 
@@ -224,5 +216,89 @@ h6 {
     display: block;
     font-size: 1em;
     text-decoration: underline;
+    padding: 2em 0 4em 0;
+    text-underline-offset: 0.5em;
+}
+
+.explore-link::after {
+    content: " ->";
+}
+
+.pricing-plans {
+    padding: 3em 0;
+    border-radius: .5em;
+}
+
+.pricing-plans>p,
+.pricing-plans h4 {
+    text-align: center;
+    padding: .5em 0;
+}
+
+.offers {
+    border-radius: .5em;
+    margin-top: 3em;
+}
+
+.offer-list {
+    border-radius: .5em;
+}
+
+.offer-item {
+    flex: 0 0 22.5%;
+}
+
+.expand {
+    flex: 1 0 30%
+}
+
+.offer-item,
+.expand {
+    padding: 1em;
+}
+
+.offer-item h6,
+.expand h6 {
+    text-align: center;
+}
+
+.offer-item .price {
+    font-size: 3em;
+}
+
+.offer-item sub {
+    font-size: 1em;
+}
+
+.offer-item p+p {
+    padding-bottom: 2em;
+}
+
+.options {
     padding: 2em 0;
+}
+
+.offer-item h6+p {
+    padding-bottom: 1em;
+}
+
+.expand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.get-price-btn,
+.get-started-btn {
+    margin: auto .5em .5em .5em;
+}
+
+.site-footer {
+    justify-content: space-between;
+    padding: 2em 4em;
+}
+
+.site-footer span {
+    display: inline-block;
+    margin-right: 1em;
 }

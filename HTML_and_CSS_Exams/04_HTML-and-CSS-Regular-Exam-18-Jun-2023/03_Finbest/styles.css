@@ -122,7 +122,7 @@ h6 { font-size: 1.2em; }
 /* HEADER CSS */
 
 .site-header {
-    padding: 2em;
+    padding: 3em 2em;
 }
 
 .main-nav {
@@ -169,7 +169,7 @@ h6 { font-size: 1.2em; }
 
 .info-item {
     text-align: center;
-    flex: 0 0 27.5%;
+    flex: 0 0 25%;
 }
 
 .info-item h4 {
@@ -245,7 +245,7 @@ h6 { font-size: 1.2em; }
 }
 
 .offer-item {
-    flex: 0 0 22.5%;
+    flex: 0 0 20%;
 }
 
 .expand {
@@ -254,7 +254,7 @@ h6 { font-size: 1.2em; }
 
 .offer-item,
 .expand {
-    padding: 1em;
+    padding: 2em;
 }
 
 .offer-item h6,
@@ -301,4 +301,13 @@ h6 { font-size: 1.2em; }
 .site-footer span {
     display: inline-block;
     margin-right: 1em;
+}
+
+.get-started-container {
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+.get-started h2 {
+    padding-bottom: 0;
 }

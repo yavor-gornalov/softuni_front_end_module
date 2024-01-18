@@ -1,0 +1,118 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css";
+
+/* RESET CSS */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* SITE CSS */
+body {
+    font: 16px / 1.5 'Inter', sans-serif;
+}
+
+.site-container {
+    max-width: 1920px;
+    background-image: url(./image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 80%;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.plan-list {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+.item {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 35em;
+    padding: 2em;
+    gap: 1em;
+    background-color: #ffffff;
+}
+
+.item:nth-child(even) {
+    min-height: 40em
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 0.8em;
+    color: #595959;
+}
+
+.tariff {
+    padding: 1em 0;
+}
+
+.tariff span:not(:nth-child(2)) {
+    font-size: 1.2em;
+    color: #595959;
+}
+
+.tariff span:nth-child(2) {
+    font-size: 4em;
+}
+
+.options-list {
+    padding: 2em 0;
+}
+
+.option {
+    margin-bottom: 1em;
+}
+
+.subscribe-btn {
+    margin-top: auto;
+    padding: 1em 1.5em;
+    border-radius: 0.5em;
+    background-color: #000000;
+    color: #ffffff;
+}

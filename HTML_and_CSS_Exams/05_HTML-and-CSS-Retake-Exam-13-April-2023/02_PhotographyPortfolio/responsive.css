@@ -1,0 +1,54 @@
+@media screen and (max-width: 600px) {
+    .navigation-nav,
+    .home-image-container,
+    .home-text {
+        display: none;
+    }
+
+    .navigation-header {
+        position: initial;
+    }
+    .home-text01 {
+        margin-top: 0;
+    }
+    .home-tab-selector-header {
+        margin-top: 32px;
+    }
+
+    .home-tab-selector-cards-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .home-step .home-text10 {
+        margin-right: 54px;
+    }
+
+    .section-container {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .home-text-container .home-text06,
+    .home-text-container .home-checklist {
+        color: #595959;
+    }
+
+    .home-top-part,
+    .home-links-container {
+        flex-direction: column;
+    }
+
+    .home-links-container>* {
+        margin-bottom: 32px;
+    }
+
+    .home-subscribe-container {
+        width: 100%;
+    }
+
+    .home-subscribe-container .button{
+        padding: 24px;
+    }
+}

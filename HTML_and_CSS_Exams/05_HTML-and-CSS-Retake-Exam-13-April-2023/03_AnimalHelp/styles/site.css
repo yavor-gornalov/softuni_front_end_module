@@ -1,0 +1,260 @@
+@import "./reset.css";
+@import "./typography.css";
+
+:root {
+    --color-light: #ffffff;
+    --color-dark: #000000;
+    --color-cyan: #85dcff;
+}
+
+
+.site-container {
+    min-width: 1920px;
+}
+
+.wrapper {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn-light,
+.btn-dark {
+    border: 1px solid var(--color-dark);
+    border-radius: .5em;
+    font-weight: bold;
+    padding: 1em 3em;
+}
+
+.btn-light {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.btn-dark {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+/* COLORS */
+.site-header {
+    background-color: var(--color-light);
+}
+
+.site-banner {
+    position: relative;
+    background-color: var(--color-cyan);
+}
+
+.site-banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-width: 100%;
+    -webkit-box-shadow: inset 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-nav {
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 2em 1em 4em;
+}
+
+.nav-link:not(.nav-link:last-child) {
+    margin-right: 1em;
+}
+
+
+.main-banner {
+    justify-content: space-around;
+}
+
+.banner-content {
+    max-width: 40em;
+}
+
+.banner-content p {
+    padding: 2em 0;
+}
+
+.banner-media img {
+    width: 40em;
+    height: auto;
+}
+
+.actions {
+    gap: 2em;
+}
+
+.services-info,
+.service-item {
+    text-align: center;
+}
+
+.services-info h3 {
+    padding: 1em 0;
+}
+
+.services-info p {
+    max-width: 35em;
+    margin: 0 auto;
+    font-size: 1.5em;
+    letter-spacing: .125em;
+    padding-bottom: 2em;
+}
+
+.service-list {
+    justify-content: space-around;
+    padding: 2em;
+    gap: 2em;
+
+}
+
+.service-item {
+    flex: 0 0 25%;
+}
+
+.service-item .icon {
+    color: var(--color-cyan);
+}
+
+.service-title {
+    padding: 2em 0;
+}
+
+.service-description {
+    font-size: 1.25em;
+}
+
+.mission {
+    background-color: var(--color-cyan);
+    padding: 4em;
+}
+
+.mission h2,
+.actions {
+    text-align: center;
+}
+
+.mission-list {
+    max-width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+    padding: 4em 2em;
+}
+
+.mission-item p::before {
+    content: "";
+    display: inline-block;
+    min-width: 1em;
+    min-height: 1em;
+    border-radius: .5em;
+    margin-right: .25em;
+    background-color: var(--color-dark);
+}
+
+.mission-item {
+    flex: 0 0 45%;
+    font-size: 1.5em;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery-title{
+    font-size: 4.8em;
+    font-weight: bolder;
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+.animal-list {
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.gallery .description {
+    font-size: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.picture {
+    flex: 0 0 22%;
+}
+
+.about-us {}
+
+.about-us h2{
+    padding: 2em 0 1em 0;
+    text-align: center;
+}
+
+.work {
+    border: 1px solid var(--color-dark);
+    border-radius: .5em;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.work-title {
+    background-color: var(--color-cyan);
+    padding: 1em;
+    border-bottom: 1px solid var(--color-dark);
+}
+
+.work-description {
+    font-size: 1.25em;
+    padding: 1.5em;
+}
+
+.site-footer {
+    margin-top: 8em;
+}
+
+.bottom-banner {
+    align-items: center;
+}
+
+.banner-picture {
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.news-form {
+    padding: 5em;
+}
+
+.news-form h2 {
+    padding-bottom: .5em;
+}
+
+
+.news-form input {
+    display: block;
+    margin: 2em 0;
+    padding: .5em;
+}
+
+.bottom {
+    justify-content: space-between;
+    padding: 2em 2em 2em 4em;
+}
+
+.socials a{
+    margin-right: 1em;
+}
+

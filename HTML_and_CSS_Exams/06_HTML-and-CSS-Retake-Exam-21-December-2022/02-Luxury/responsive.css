@@ -1,0 +1,105 @@
+@media screen and ((max-device-width:600px) or (max-width: 600px)) {
+
+    /* make selectors more specific to overwrite luxury.css */
+    div.div-header {
+      display: none;
+    }
+  
+    header h3 {
+      font-size: 16px ;
+      font-weight: 400;
+    }
+  
+    header h1 {
+      font-size: 32px ;
+    }
+  
+    .options {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    section.options article {
+      text-align: center;
+      width: 100%;
+    }
+  
+    section.options a {
+      display: none;
+    }
+  
+    section.gallery {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  
+  
+    div.blog-title a,
+    div.blog-title h4 span {
+      display: none;
+    }
+  
+    div.blog-title h4 {
+      font-size: 32px;
+    }
+  
+    div#about-blog {
+      width: 90%;
+    }
+  
+    div#about-blog h3 {
+      font-size: 24px;
+    }
+  
+    .blog article img {
+      display: none;
+    }
+  
+    div.magazine-title h4 {
+      font-size: 24px;
+  
+    }
+  
+    div.magazine-title a {
+      display: none;
+    }
+  
+    section.magazine article {
+      flex-direction: column;
+      align-items: center;
+      justify-content: stretch;
+      margin: 0 auto;
+    }
+  
+    div.magazine-info {
+      text-align: center;
+      margin: 0 auto;
+    }
+  
+    div.magazine-info h2 {
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+  
+    div.magazine-info h3 {
+      margin-bottom: 24px;
+    }
+  
+    div.magazine-info img {
+      width: 100%;
+    }
+  
+    div.magazine-info button {
+      margin-top: 32px;
+      margin-bottom: 64px;
+    }
+  
+    footer {
+      flex-direction: column;
+    }
+  
+    footer div.icons a {
+      display: block;
+    }
+  }

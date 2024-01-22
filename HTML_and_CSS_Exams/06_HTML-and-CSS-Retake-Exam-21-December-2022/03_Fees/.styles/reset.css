@@ -1,0 +1,27 @@
+/* DEFINE BOX-SIZING RULES */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* REMOVE MARGINS AND PADDINGS */
+* {
+    margin: 0;
+    padding: 0
+}
+/* REMOVE UNORDERED LISTS STYLING */
+ul {
+    list-style: none;
+}
+
+/* FIX PICS WIDTH TO ITS CONTAINER SIZE */
+img,
+picture {
+    width: 100%;
+    height: auto;
+}

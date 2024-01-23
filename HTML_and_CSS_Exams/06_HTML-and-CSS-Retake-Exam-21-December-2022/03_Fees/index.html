@@ -4,70 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".styles/site.css">
+    <link rel="stylesheet" href="./styles/site.css">
     <title>Fees</title>
 </head>
 
 <body>
     <header class="site-header">
-        <div class="site-top row wrapper">
-            <div class="site-logo">
-                <a href="#"><img src="./images/creative-logo.svg" alt="creative-logo"></a>
+        <div class="wrapper">
+            <div class="site-top row ">
+                <div class="site-logo">
+                    <a href="#"><img src="./images/creative-logo.svg" alt="creative-logo"></a>
+                </div>
+                <nav class="site-nav ">
+                    <ul class="main-nav row">
+                        <li class="nav-item"><a href="#">ЗА НАС</a></li>
+                        <li class="nav-item"><a href="#">ФОРУМ</a></li>
+                        <li class="nav-item"><a href="#">БЛОГ</a></li>
+                        <li class="nav-item"><a href="#">КОНТАКТИ</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="site-nav ">
-                <ul class="main-nav row">
-                    <li class="nav-item"><a href="#"></a>ЗА НАС</li>
-                    <li class="nav-item"><a href="#"></a>ФОРУМ</li>
-                    <li class="nav-item"><a href="#"></a>БЛОГ</li>
-                    <li class="nav-item"><a href="#"></a>КОНТАКТИ</li>
-                </ul>
-            </nav>
         </div>
         <div class="site-banner">
-            <div class="banner-image">
+            <div class="banner-media">
                 <img src="./images/calculator-icon.svg" alt="calculator">
             </div>
             <h2 class="banner-title">Такси</h2>
             <ul class="offers row wrapper">
                 <li class="offer-item">
-                    <h3 class="offer-title">Design Basics</h3>
-                    <p class="offer-description">Подготвителен курс</p>
-                    <span><a href="#" class="offer-btn"></a>Кандидатствай</span>
+                    <div class="offer-header">
+                        <h2 class="offer-title">Design Basics</h2>
+                        <p class="offer-description">Подготвителен курс</p>
+                        <span><a href="#" class="apply-btn">Кандидатствай</a></span>
+                    </div>
                     <div class="offer-pricing">
                         <div class="sub-offer">
-                            <h4 class="price">Безплатно</h4>
+                            <h3 class="price">Безплатно</h3>
                             <p class="condition">* 50 лв. такса за приемен изпит</p>
                         </div>
                     </div>
                 </li>
                 <li class="offer-item">
-                    <h3 class="offer-title">Fundamentals Program</h3>
-                    <p class="offer-description">Курсистите ще продължат обучението си в 6 фундаментални курса, покриващи основните сфери на дизайна и визуализацията.</p>
-                    <p class="offer-description">Възможност за заплащане на таксата на 2 равни вноски.</p>
+                    <div class="offer-header">
+                        <h2 class="offer-title">Fundamentals Program</h2>
+                        <p class="offer-description">Курсистите ще продължат обучението си в 6 фундаментални курса,
+                            покриващи основните сфери на дизайна и визуализацията.</p>
+                        <p class="offer-description">Възможност за заплащане на таксата на 2 равни вноски.</p>
+                    </div>
                     <div class="offer-pricing row">
                         <div class="sub-offer">
-                            <h4 class="price">680 лв.</h4>
+                            <h3 class="price">680 лв.</h3>
                             <p class="condition">присъствено за 6 курса</p>
                         </div>
                         <span class="ruler"></span>
                         <div class="sub-offer">
-                            <h4 class="price">620 лв.</h4>
+                            <h3 class="price">620 лв.</h3>
                             <p class="condition">онлайн за 6 курса</p>
                         </div>
                     </div>
                 </li>
                 <li class="offer-item">
-                    <h3 class="offer-title">Professional Program</h3>
-                    <p class="offer-description">Курсистите ще продължат обучението си в 6 фундаментални курса, покриващи основните сфери на дизайна и визуализацията.</p>
-                    <p class="offer-description">Обявената такса е преференциална за курсистите от Fundamentals Program.</p>
+                    <div class="offer-header">
+                        <h2 class="offer-title">Professional Program</h2>
+                        <p class="offer-description">Курсистите ще продължат обучението си в 6 фундаментални курса,
+                            покриващи основните сфери на дизайна и визуализацията.</p>
+                        <p class="offer-description">Обявената такса е преференциална за курсистите от Fundamentals
+                            Program.</p>
+                    </div>
                     <div class="offer-pricing row">
                         <div class="sub-offer">
-                            <h4 class="price">330 лв.</h4>
+                            <h3 class="price">330 лв.</h3>
                             <p class="condition">присъствено за модул</p>
                         </div>
                         <span class="ruler"></span>
                         <div class="sub-offer">
-                            <h4 class="price">290 лв.</h4>
+                            <h3 class="price">290 лв.</h3>
                             <p class="condition">онлайн за модул</p>
                         </div>
                     </div>
@@ -75,6 +86,73 @@
             </ul>
         </div>
     </header>
+    <main class="site-main">
+        <section class="plans wrapper">
+            <header class="plan-info">
+                <h2 class="plan-title">Присъствено или Онлайн</h2>
+                <p class="plan-descrition">Формите на обучение в SoftUni Digital са две – присъствена и онлайн, така че
+                    обучението е подходящо, както за учещи и работещи, така и за курсисти, живеещи във всяка точка на
+                    света. Студентите могат да избират дали желаят да се обучават присъствено или онлайн за всеки
+                    отделен модул от учебния план.</p>
+            </header>
+            <table class="plan-table">
+                <tr>
+                    <td>Присъствие в учебните зали на всички занятия от програмата</td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                    <td><img src="./images/cross.svg" alt="No"></td>
+                </tr>
+                <tr>
+                    <td>Възможност за личен контакт с преподавателя и курсистите на живо</td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                    <td><img src="./images/cross.svg" alt="No"></td>
+                </tr>
+                <tr>
+                    <td>Онлайн обучение в реално време и възможност за въпроси</td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                </tr>
+                <tr>
+                    <td>Доживотен достъп до видео записите и учебните ресурси от всични занятия</td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                </tr>
+                <tr>
+                    <td>Издаване на държавно признати удостоверения от МОН</td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                </tr>
+                <tr>
+                    <td>Достъп до кариерен център и съдействие за стартиране на работа</td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                    <td><img src="./images/check.svg" alt="Yes"></td>
+                </tr>
+            </table>
+        </section>
+        <section class="funding wrapper">
+            <h2 class="funding-heading">Финансиране от Пощенска банка</h2>
+            <div class="funding-description row">
+                <div class="funding-content">
+                    <p>Всички курсисти могат да се възползват от преференциалните условия за потребителски кредит и
+                        овърдрафт, за финансиране на своето обучение в СофтУни, като заявят лесно и удобно избрания
+                        продукт:</p>
+                    <p>При последващ разговор със служител на банката, следва да се уточни, че искането е за кредит за
+                        финансиране на обучение в SoftUni и да се предостави студентски номер.
+                        www.postbank.bg - при попълване на апликацията, в поле „промоционален код“ трябва да се въведe
+                        SoftUni/ СофтУни и при последващ разговор със служител на банката, да се предостави студентски
+                        номер.
+                    </p>
+                </div>
+                <div class="bank-logo">
+                    <img src="./images/postbank-logo.png" alt="postbank-logo">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="wapper">
+            <p>© 2017-2020 SoftUni Creative. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,251 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.site-header {
+    margin-bottom: 5em;
+}
+
+.site-top {
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.site-logo {
+    width: 10em;
+}
+
+.nav-item {
+    margin: .5em 0;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 1em;
+}
+
+.site-banner {
+    text-align: center;
+    position: relative;
+    padding-bottom: 2em;
+}
+
+
+.banner-media {
+    width: 100%;
+    height: 25em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #54546d;
+    z-index: -1;
+}
+
+.banner-media img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: auto;
+}
+
+.banner-title {
+    position: relative;
+    color: #fff;
+    font-size: 2.4em;
+    font-weight: 500;
+    padding: 2em 0;
+}
+
+.offers {
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 0 1em;
+}
+
+.offer-item {
+    background-color: #fff;
+    flex: 1 0 25%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: .75em;
+    -webkit-box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.offer-header {
+    padding: 2em;
+}
+
+.offer-title {
+    padding: 1em 0 2em;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+.offer-item:first-child .offer-title {
+    padding-bottom: 1em;
+}
+
+.offer-pricing {
+    margin-top: auto;
+    color: #fff;
+    justify-content: space-around;
+}
+
+/* .offer-item .offer-description:last-of-type {
+    padding-bottom: 2em;
+} */
+
+.offer-description {
+    margin-bottom: 1em;
+}
+
+.price {
+    padding: 1em 0 .5em;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.condition {
+    padding-bottom: 2em;
+}
+
+
+.offer-item:nth-child(1) .offer-pricing {
+    background: rgb(2, 154, 60);
+    background: linear-gradient(90deg, rgba(2, 154, 60, 1) 16%, rgba(75, 214, 128, 1) 87%);
+}
+
+.offer-item:nth-child(2) .offer-pricing {
+    background: rgb(76, 107, 136);
+    background: linear-gradient(90deg, rgba(76, 107, 136, 1) 16%, rgba(97, 154, 207, 1) 87%);
+}
+
+.offer-item:nth-child(3) .offer-pricing {
+    background: rgb(74, 55, 165);
+    background: linear-gradient(90deg, rgba(74, 55, 165, 1) 16%, rgba(140, 125, 225, 1) 87%);
+}
+
+.ruler {
+    display: block;
+    border-left: 1px solid #fff;
+    height: 80%;
+}
+
+.sub-offer:not(.ruler) {
+    flex: 0 0 45%
+}
+
+.apply-btn {
+    text-transform: uppercase;
+    padding: .75em 2em;
+    background-color: rgb(154, 93, 198);
+    color: #fff;
+    border-radius: 1em;
+    -webkit-box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.offer-item .apply-btn {
+    margin-top: 3em;
+    display: inline-block;
+}
+
+.site-main {
+    padding: 0 1em;
+
+}
+
+.plans {
+    max-width: 70%;
+    margin-bottom: 5em;
+}
+
+.plan-title {
+    padding-bottom: 1em;
+}
+
+.plan-descrition {
+    padding-bottom: 2em;
+}
+
+.plan-table {
+    border-radius: .5em;
+    width: 100%;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+
+.plan-table tr:nth-child(odd) {
+    background-color: rgb(230, 230, 230);
+}
+
+.plan-table tr:nth-child(even) {
+    background-color: rgb(248, 248, 248);
+}
+
+.plan-table td {
+    padding: 1em 0;
+}
+
+.plan-table tr td:first-child {
+    padding-left: 1em;
+}
+
+.plan-table td img {
+    max-width: 1.1em;
+}
+
+.plan-table tr td:not(td:first-child) {
+    width: 15%;
+    text-align: center;
+}
+
+.funding {
+    margin-bottom: 5em;
+}
+
+.funding-heading {
+    padding: 1em 0;
+}
+
+.funding-description {
+    justify-content: space-between;
+}
+
+.funding-description p {
+    padding-bottom: 1em;
+}
+
+.bank-logo {
+    flex: 0 0 25%;
+}
+
+.bank-logo img {
+    width: 100%;
+}
+
+.site-footer {
+    background-color: #54546d;
+    color: rgb(144, 143, 171);
+    text-align: center;
+    padding: 2em 1em;
+}

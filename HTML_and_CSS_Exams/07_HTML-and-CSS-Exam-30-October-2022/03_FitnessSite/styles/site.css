@@ -1,0 +1,159 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+html {
+    font: 18px / 1.5 'PT Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: auto;
+}
+
+.site-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 25, 25);
+    padding: 1em 2em;
+}
+
+.socials a:not(:last-child) {
+    margin-right: .5em;
+}
+
+.site-banner {
+    background-color: rgb(24, 28, 31);
+}
+
+.site-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40em;
+    color: rgb(255, 255, 255);
+    background-image: url(../image/fitness-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.site-nav {
+    width: 100%;
+}
+
+.main-nav {
+    width: 50%;
+    margin-left: auto;
+    margin-block: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin-right: .5em;
+}
+
+.site-banner-content {
+    margin: auto;
+    text-align: center;
+}
+
+.site-title {
+    font-size: 3em;
+    letter-spacing: .15em;
+    margin-bottom: 1em;
+}
+
+.site-moto {
+    margin: 0 auto 2em;
+    max-width: 30em;
+}
+
+.get-started-btn {
+    display: inline-block;
+    font-weight: 600;
+    background-color: rgb(208, 25, 25);
+    padding: .5em 1em;
+    border-radius: 5px;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.section-title {
+    font-size: 2.4em;
+}
+
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 2em;
+    margin: 1em auto;
+    border-top: 3px solid rgb(208, 25, 25);
+}
+
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-content {
+    padding: 0 2em;
+}
+
+.ico-card,
+.media-card {
+    flex: 0 0 20%;
+}
+
+.ico-card .media {
+    width: 25%;
+    margin: 1em auto;
+}
+
+.coaches {
+    padding-block: 3em;
+    background-color: rgb(239, 239, 239);
+    text-align: center;
+}
+
+.media-card .media {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-heading,
+.sport-type {
+    color: rgb(208, 25, 25);
+    margin-block: 1em;
+}
+
+.ico-card .card-heading,
+.trainer-name {
+    font-size: 1.2em;
+    margin-block: 1em;
+}
+
+.coaches .card-content {
+    color: rgb(166, 161, 165);
+}
+
+.site-footer {
+    background-color: rgb(208, 25, 25);
+    padding-block: 1em;
+    text-align: center;
+}

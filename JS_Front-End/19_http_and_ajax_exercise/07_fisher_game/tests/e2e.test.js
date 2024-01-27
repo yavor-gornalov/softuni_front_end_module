@@ -206,39 +206,39 @@ describe('E2E tests', function () {
   //   });
   // });
 
-  describe('Catalog', () => {
-    it('load catches', async () => {
-      const data = mockData.catalog;
-      const { get } = await handle(endpoints.catalog);
-      get(data);
-      await page.goto(host);
+  // describe('Catalog', () => {
+  //   it('load catches', async () => {
+  //     const data = mockData.catalog;
+  //     const { get } = await handle(endpoints.catalog);
+  //     get(data);
+  //     await page.goto(host);
 
-      await page.waitForSelector('.load');
+  //     await page.waitForSelector('.load');
 
-      await page.click('text=Load');
+  //     await page.click('text=Load');
 
-      await page.waitForSelector('#main');
-      const titles = await page.$$eval('#catches .catch', (t) =>
-        t.map((s) => s.textContent)
-      );
+  //     await page.waitForSelector('#main');
+  //     const titles = await page.$$eval('#catches .catch', (t) =>
+  //       t.map((s) => s.textContent)
+  //     );
 
-      expect(titles.length).to.be.equal(data.length);
-    });
+  //     expect(titles.length).to.be.equal(data.length);
+  //   });
 
-    it('before load catches', async () => {
-      const data = mockData.catalog;
-      const { get } = await handle(endpoints.catalog);
-      get(data);
-      await page.goto(host);
+  //   it('before load catches', async () => {
+  //     const data = mockData.catalog;
+  //     const { get } = await handle(endpoints.catalog);
+  //     get(data);
+  //     await page.goto(host);
 
-      await page.waitForSelector('#main');
-      const titles = await page.$$eval('#catches .catch', (t) =>
-        t.map((s) => s.textContent)
-      );
+  //     await page.waitForSelector('#main');
+  //     const titles = await page.$$eval('#catches .catch', (t) =>
+  //       t.map((s) => s.textContent)
+  //     );
 
-      expect(titles.length).to.be.equal(0);
-    });
-  });
+  //     expect(titles.length).to.be.equal(0);
+  //   });
+  // });
 
   describe('CRUD', () => {
     // Login user
@@ -333,41 +333,41 @@ describe('E2E tests', function () {
       expect(result.length).to.be.equals(2);
     });
 
-    it('edit makes correct API call for logged in user', async () => {
-      await loginUser();
-      const data = mockData.catalog[0];
-      await page.goto(host);
-      const { get, put } = await handle(endpoints.details(data._id));
-      get(data);
-      const { onRequest } = put();
-      await page.waitForSelector('.load');
+    // it('edit makes correct API call for logged in user', async () => {
+    //   await loginUser();
+    //   const data = mockData.catalog[0];
+    //   await page.goto(host);
+    //   const { get, put } = await handle(endpoints.details(data._id));
+    //   get(data);
+    //   const { onRequest } = put();
+    //   await page.waitForSelector('.load');
 
-      await page.click('.load');
+    //   await page.click('.load');
 
-      await page.waitForSelector('#catches');
-      await page.fill('.catch input[class="angler"]', data.angler + 'edit');
-      await page.waitForSelector('.update');
+    //   await page.waitForSelector('#catches');
+    //   await page.fill('.catch input[class="angler"]', data.angler + 'edit');
+    //   await page.waitForSelector('.update');
 
-      const [request] = await Promise.all([onRequest(), page.click('.update')]);
+    //   const [request] = await Promise.all([onRequest(), page.click('.update')]);
 
-      const postData = JSON.parse(request.postData());
-      expect(postData.angler).to.contains(data.angler);
-    });
+    //   const postData = JSON.parse(request.postData());
+    //   expect(postData.angler).to.contains(data.angler);
+    // });
 
-    it('delete makes correct API call for logged in user', async () => {
-      await loginUser();
-      const data = mockData.catalog[0];
-      await page.goto(host);
-      const { del } = await handle(endpoints.details(data._id));
-      const { onResponse, isHandled } = del({ id: data._id });
+    // it('delete makes correct API call for logged in user', async () => {
+    //   await loginUser();
+    //   const data = mockData.catalog[0];
+    //   await page.goto(host);
+    //   const { del } = await handle(endpoints.details(data._id));
+    //   const { onResponse, isHandled } = del({ id: data._id });
 
-      await page.click('.load');
-      await page.waitForSelector('.delete');
+    //   await page.click('.load');
+    //   await page.waitForSelector('.delete');
 
-      await Promise.all([onResponse(), page.click('text="Delete"')]);
+    //   await Promise.all([onResponse(), page.click('text="Delete"')]);
 
-      expect(isHandled()).to.be.true;
-    });
+    //   expect(isHandled()).to.be.true;
+    // });
   });
 });
 

@@ -6,7 +6,7 @@ const userButtonsDiv = document.getElementById("user");
 
 const userEmailElement = document.querySelector(".email span");
 
-const fieldsetMain = document.getElementById("main");
+const catchContainer = document.getElementById("catches");
 
 const catchUrl = "http://localhost:3030/data/catches/";
 const loadBtn = document.querySelector("button[class='load");
@@ -16,8 +16,7 @@ const logoutUrl = "http://localhost:3030/users/logout";
 const logoutBtn = document.getElementById("logout");
 
 onload = (event) => {
-    // fieldsetMain.style.display = "none";
-    loadCatch();
+    catchContainer.replaceChildren();
     let loggedUser = sessionStorage.getItem("userEmail") ? sessionStorage.getItem("userEmail") : "guest";
     if (loggedUser !== "guest") {
         userButtonsDiv.style.display = "";
@@ -27,13 +26,12 @@ onload = (event) => {
         userButtonsDiv.style.display = "none";
         guestButtonsDiv.style.display = "";
         addBtn.disabled = true;
-        addBtn.parentNode.disabled = true
+        addBtn.parentNode.disabled = true;
     }
     userEmailElement.textContent = loggedUser;
 };
 
-homeNavBtn.addEventListener("click", () => {
-});
+homeNavBtn.addEventListener("click", () => {});
 
 addBtn.addEventListener("click", addCatch);
 
@@ -65,8 +63,7 @@ async function userLogout(e) {
 }
 
 async function loadCatch(e) {
-    console.log("loadBtn clicked!");
-    fieldsetMain.replaceChildren();
+    catchContainer.replaceChildren();
     const userId = sessionStorage.getItem("userId");
     // if (!userId) return;
     // console.log(userId);
@@ -80,7 +77,6 @@ async function loadCatch(e) {
         const catchData = await response.json();
         Array.from(catchData).forEach((record) => {
             let catchRecord = document.createElement("div");
-            // catchRecord.classList.add("catch");
             catchRecord.innerHTML = `<div class="catch">
                 <label>Angler</label>
                 <input type="text" class="angler" value="${record.angler}">
@@ -97,66 +93,61 @@ async function loadCatch(e) {
                 <button class="update" data-id="${record._id}">Update</button>
                 <button class="delete" data-id="${record._id}">Delete</button>
             </div>`;
+            const isDisabled = record._ownerId !== userId;
             const formElements = Array.from(catchRecord.querySelectorAll("input, button"));
-            console.log(formElements);
             formElements.forEach((element) => {
-                element.disabled = record._ownerId !== userId;
+                element.disabled = isDisabled;
             });
 
-            const [updateRecordBtn, deleteRecordBtn] = catchRecord.getElementsByTagName("button");
-            // updateRecordBtn.disabled = record._ownerId !== userId;
-            // deleteRecordBtn.disabled = record._ownerId !== userId;
+            if (!isDisabled) {
+                const [updateRecordBtn, deleteRecordBtn] = catchRecord.getElementsByTagName("button");
 
-            deleteRecordBtn.addEventListener("click", async (e) => {
-                try {
-                    await fetch(catchUrl + record._id, {
-                        method: "delete",
-                        headers: { "X-Authorization": sessionStorage.userToken },
-                    });
-                    if (!response.ok) throw Error(response.statusText);
+                deleteRecordBtn.addEventListener("click", async (e) => {
+                    try {
+                        await fetch(catchUrl + record._id, {
+                            method: "delete",
+                            headers: { "X-Authorization": sessionStorage.userToken },
+                        });
+                        if (!response.ok) throw Error(response.statusText);
 
-                    fieldsetMain.replaceChildren();
-                    loadCatch(e);
-                    // location.reload();
-                } catch (err) {
-                    window.confirm(err);
-                }
-            });
+                        loadCatch(e);
+                    } catch (err) {
+                        window.confirm(err);
+                    }
+                });
 
-            updateRecordBtn.addEventListener("click", async (e) => {
-                const inputFields = catchRecord.getElementsByTagName("input");
+                updateRecordBtn.addEventListener("click", async (e) => {
+                    const inputFields = catchRecord.getElementsByTagName("input");
 
-                const newRecord = {};
-                for (const inputField of inputFields) {
-                    newRecord[inputField.classList[0]] = inputField.value;
-                }
-                try {
-                    await fetch(catchUrl + record._id, {
-                        method: "put",
-                        headers: { "X-Authorization": sessionStorage.userToken },
-                        body: JSON.stringify({
-                            angler: inputFields[0].value,
-                            weight: Number(inputFields[1].value),
-                            species: inputFields[2].value,
-                            location: inputFields[3].value,
-                            bait: inputFields[4].value,
-                            captureTime: Number(inputFields[5].value),
-                            _id: record._id
-                        }),
-                    });
-                    if (!response.ok) throw Error(response.statusText);
+                    const newRecord = {};
+                    for (const inputField of inputFields) {
+                        newRecord[inputField.classList[0]] = inputField.value;
+                    }
+                    try {
+                        await fetch(catchUrl + record._id, {
+                            method: "put",
+                            headers: { "X-Authorization": sessionStorage.userToken },
+                            body: JSON.stringify({
+                                angler: inputFields[0].value,
+                                weight: Number(inputFields[1].value),
+                                species: inputFields[2].value,
+                                location: inputFields[3].value,
+                                bait: inputFields[4].value,
+                                captureTime: Number(inputFields[5].value),
+                                _id: record._id,
+                            }),
+                        });
+                        if (!response.ok) throw Error(response.statusText);
 
-                    // location.reload();
-                    fieldsetMain.replaceChildren();
-                    loadCatch(e);
-                } catch (err) {
-                    window.confirm(err);
-                }
-            });
-
-            fieldsetMain.appendChild(catchRecord);
+                        catchContainer.replaceChildren();
+                        loadCatch(e);
+                    } catch (err) {
+                        window.confirm(err);
+                    }
+                });
+            }
+            catchContainer.appendChild(catchRecord);
         });
-        fieldsetMain.style.display = "";
         if (!response.ok) throw Error(response.statusText);
     } catch (err) {
         window.confirm(err);
@@ -188,10 +179,9 @@ async function addCatch(e) {
 
         if (!response.ok) throw Error(response.statusText);
 
-        // window.confirm("New catch, recorded!");
-        fieldsetMain.replaceChildren();
+        catchContainer.replaceChildren();
         loadCatch(e);
-        addForm.reset()
+        addForm.reset();
     } catch (err) {
         window.confirm(err);
     }

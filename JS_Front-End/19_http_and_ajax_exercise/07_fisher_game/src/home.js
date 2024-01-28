@@ -16,9 +16,12 @@ const logoutUrl = "http://localhost:3030/users/logout";
 const logoutBtn = document.getElementById("logout");
 
 onload = (event) => {
-    catchContainer.replaceChildren();
     let loggedUser = sessionStorage.getItem("userEmail") ? sessionStorage.getItem("userEmail") : "guest";
+    userEmailElement.textContent = loggedUser;
+    catchContainer.style.display = "none";
     if (loggedUser !== "guest") {
+        loadData();
+        // catchContainer.style.display = "block";
         userButtonsDiv.style.display = "";
         guestButtonsDiv.style.display = "none";
         addBtn.disabled = false;
@@ -28,7 +31,6 @@ onload = (event) => {
         addBtn.disabled = true;
         addBtn.parentNode.disabled = true;
     }
-    userEmailElement.textContent = loggedUser;
 };
 
 homeNavBtn.addEventListener("click", () => {});
@@ -62,7 +64,7 @@ async function userLogout(e) {
     }
 }
 
-async function loadCatch(e) {
+async function loadData(e) {
     catchContainer.replaceChildren();
     const userId = sessionStorage.getItem("userId");
     // if (!userId) return;
@@ -110,7 +112,7 @@ async function loadCatch(e) {
                         });
                         if (!response.ok) throw Error(response.statusText);
 
-                        loadCatch(e);
+                        loadData(e);
                     } catch (err) {
                         window.confirm(err);
                     }
@@ -140,7 +142,7 @@ async function loadCatch(e) {
                         if (!response.ok) throw Error(response.statusText);
 
                         catchContainer.replaceChildren();
-                        loadCatch(e);
+                        loadData(e);
                     } catch (err) {
                         window.confirm(err);
                     }
@@ -152,6 +154,11 @@ async function loadCatch(e) {
     } catch (err) {
         window.confirm(err);
     }
+}
+
+function loadCatch(e) {
+    if (!document.querySelectorAll("#catches .catch").length) loadData();
+    catchContainer.style.display = "block";
 }
 
 async function addCatch(e) {
@@ -180,7 +187,7 @@ async function addCatch(e) {
         if (!response.ok) throw Error(response.statusText);
 
         catchContainer.replaceChildren();
-        loadCatch(e);
+        loadData(e);
         addForm.reset();
     } catch (err) {
         window.confirm(err);

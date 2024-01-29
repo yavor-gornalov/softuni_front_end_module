@@ -33,7 +33,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h2>Create Product</h2>
-                                <form action="" method="post">
+                                <form action="" method="post" id="create-form">
                                     <label>Name: <input type="text" name="name"></label>
                                     <label>Price: <input type="text" name="price"></label>
                                     <label>Factor: <input type="text" name="factor"></label>
@@ -52,7 +52,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
+                                        <!-- <tr>
                                             <td>
                                                 <img
                                                     src="https://www.lidl-shop.nl/media/fcf868f9526b38d0b0a43cc2ace72b80.jpeg">
@@ -87,7 +87,7 @@
                                             <td>
                                                 <input type="checkbox"/>
                                             </td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                                 <button>Buy</button>
@@ -95,7 +95,7 @@
                                 <div class="orders">
                                     <p>Bought furniture: <span>Office chair, Sofa</span></p>
                                     <p>Total price: <span>419 $</span></p>
-                                    <button>All orders</button>
+                                    <button id="show-orders-btn">All orders</button>
                                 </div>
                             </div>
                         </div>

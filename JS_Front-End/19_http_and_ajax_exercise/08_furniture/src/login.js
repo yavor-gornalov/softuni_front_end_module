@@ -1,6 +1,6 @@
 const registrationUrl = "http://localhost:3030/users/register";
-const registrationForm = document.querySelector("form[id='register-form']");
-const registerBtn = registrationForm.querySelector("button");
+const createForm = document.querySelector("form[id='register-form']");
+const registerBtn = createForm.querySelector("button");
 
 const loginUrl = "http://localhost:3030/users/login";
 const loginForm = document.querySelector("form[id='login-form']");
@@ -8,11 +8,11 @@ const loginBtn = loginForm.querySelector("button");
 
 registerBtn.addEventListener("click", async (e) => {
     e.preventDefault();
-    const registrationData = new FormData(registrationForm);
+    const registrationData = new FormData(createForm);
     const email = registrationData.get("email");
     const password = registrationData.get("password");
     const rePass = registrationData.get("rePass");
-    registrationForm.reset();
+    createForm.reset();
 
     if (!email || !password) return window.confirm("Fields Email and Password are required!");
     if (password !== rePass) return window.confirm("Passwords do not match!");
@@ -62,6 +62,7 @@ loginBtn.addEventListener("click", async (e) => {
         if (!response.ok) throw Error(response.statusText);
 
         sessionStorage.setItem("accessToken", user.accessToken);
+        sessionStorage.setItem("userId", user._id);
         window.alert(`User '${email}', just logged in!\nRedirecting to Home page.`);
         location.replace("./homeLogged.html")
 

@@ -1,0 +1,104 @@
+@import url(./reset.css);
+@import url(https://fonts.googleapis.com/css2?family=Mulish&display=swap);
+
+html {
+    font-family: Mulish, sans-serif;
+}
+
+body {
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 50%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(../images/form-background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 4em 2em 2em;
+    border-radius: 15px;
+    -webkit-box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.35);
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.35);
+}
+
+.form-container::after{
+    content: "";
+    display: block;
+    flex: 0 1 45%;
+}
+
+.registration-form {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form>*{
+    margin-block: 1em;
+}
+
+label,
+input:not([type='checkbox']) {
+    display: block;
+    width: 100%;
+    margin-top: .5em;
+}
+
+label, button {
+    margin-block: .5em .25em;
+}
+
+button, input {
+    font: inherit;
+    border: 1px solid #cccccc;
+    border-radius: 2em;
+    padding: .5em 1em;
+}
+
+label {
+    color: #747674;
+}
+
+input {
+    background-color: transparent;
+}
+
+button {
+    background-color: #ae3c33;
+    color: #ffffff;
+    font-weight: 700;
+    align-self: center;
+}
+
+button, h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    letter-spacing: .1em;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.user-info label {
+    flex: 1 0 45%
+}

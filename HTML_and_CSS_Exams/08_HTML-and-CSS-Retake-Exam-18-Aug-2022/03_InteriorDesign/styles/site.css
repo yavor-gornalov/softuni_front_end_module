@@ -1,0 +1,214 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+html {
+    font: 18px / 1.5 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Abril Fatface';
+}
+
+@media (width <=1600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (width <=1400px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (width <=1200px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+.site-container {
+    max-width: 75em;
+    margin: auto;
+
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+
+    background-image: url(../image/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.site-header::after {
+    content: '';
+    display: block;
+    width: 20%;
+    aspect-ratio: 1;
+}
+
+.site-heading {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+    width: 20%;
+    aspect-ratio: 1;
+    padding: 1em;
+    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.35);
+}
+
+.site-title {
+    font-size: 2.4em;
+    font-weight: normal;
+
+}
+
+.company-name {
+    font-weight: 400;
+    margin-block: 1em;
+    padding-top: .5em;
+    border-top: 2px solid white;
+}
+
+.company-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 30%;
+    text-align: right;
+    align-self: flex-end;
+    padding: 1em;
+    background: rgb(159, 150, 142);
+    background: linear-gradient(90deg, rgba(159, 150, 142, 1) 16%, rgba(202, 200, 199, 1) 87%);
+    color: white;
+    padding-block: 3em 1em;
+}
+
+.company-projects .icon {
+    color: #8d8581;
+    margin-bottom: .5em;
+
+}
+
+.site-main {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f0f3;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.services,
+.contacts {
+    margin: 3em 6em;
+}
+
+.section-title {
+    margin-block: 1em .5em;
+    text-transform: uppercase;
+}
+
+.service-item {
+    margin-block: 1em;
+}
+
+.service-item span {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: .5em;
+}
+
+.contacts .section-title {
+    margin: 0 -6rem;
+    padding-left: 6rem;
+    border-bottom: 1px solid black;
+}
+
+.contact-list {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.contacts .contact {
+    margin-right: 1em;
+    margin-bottom: .5em;
+}
+
+.contacts .abbreviation {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.get-started-form {
+    margin-block: 1em;
+}
+
+.advertisement {
+    padding: 2em 4em 2em 1em;
+    background-color: #bab1ad;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: fit-content;
+}
+
+.advertisement .number {
+    font-size: 3.5em;
+    line-height: 1.15;
+    font-weight: 300;
+    color: white;
+    display: block;
+}
+
+.advertisement .resources {
+    text-transform: uppercase;
+}
+
+.email-field,
+.get-started-btn {
+    font: inherit;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+
+.email-field {
+    padding-right: 5em;
+    margin-right: 1em;
+    background-color: #bab1ad;
+}
+
+.email-field::placeholder {
+    font-weight: bold;
+    color: white;
+}
+
+.get-started-btn {
+    background-color: #67784d;
+}

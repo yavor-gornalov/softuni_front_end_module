@@ -1,0 +1,93 @@
+@media (width <=600px) {
+    body {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block: 1em;
+    }
+
+    header nav ul li {
+        padding-right: 0;
+        margin-bottom: .5em;
+    }
+
+    .header-title {
+        padding: 0;
+    }
+
+    .header-title h1 {
+        font-size: 36px;
+    }
+
+    .header-title p {
+        font-size: 16px;
+    }
+
+    .team-description ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2em;
+    }
+
+    .team-description ul li {
+        flex: 0 0 42%;
+
+    }
+
+    .team-description ul li img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .choose-us ul {
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .choose-us li {
+        margin-bottom: .5em;
+    }
+
+    .choose-us li img {
+        width: 8em;
+        height: 8em;
+    }
+
+    .choose-us li h4 {
+        font-size: 16px;
+    }
+
+    .choose-us li p {
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    .blog-news ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-news ul li {
+        max-width: 75%;
+        margin-bottom: 2.5em;
+    }
+
+
+}

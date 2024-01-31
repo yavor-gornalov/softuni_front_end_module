@@ -1,0 +1,127 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+html {
+    font: 20px / 1.5 Courgette, serif
+}
+
+
+@media (width <=1800px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (width <=1600px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (width <=1400px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+
+.site-container {
+    min-height: 100vh;
+    background-color: rgb(245, 245, 245);
+    padding: 2em;
+}
+
+.wrapper {
+    max-width: 90em;
+    margin: 0 auto;
+}
+
+.site-header {
+    margin-block: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-title,
+.subtitle {
+    line-height: 1.15;
+    max-width: 30%;
+    min-width: 20%;
+}
+
+.site-title {
+    font-size: 3em;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: rgb(203, 32, 39);
+    text-align: right;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 2em;
+    gap: 1em;
+
+}
+
+.card {
+    flex: 0 0 30%;
+    background-color: white;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card-text,
+.card-title,
+.card-footer {
+    padding: 0 .5rem;
+    margin: 0 1rem;
+}
+
+.card-title {
+    font-size: 2em;
+    margin-block: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid rgb(203, 32, 39);
+}
+
+.card-text {
+    margin-block: 1em;
+}
+
+.card-media {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.card-media img {
+    position: relative;
+    inset: 50% 0;
+    transform: translateY(-50%);
+}
+
+.card-footer {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
+
+.card-footer span {
+    color: rgb(203, 32, 39);
+    margin-left: .25em;
+}

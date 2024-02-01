@@ -1,0 +1,77 @@
+@media (width <=600px) {
+    body {
+        width: 100vw;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main .left-to-right article {
+        border-radius: 25%;
+        width: 80%;
+        aspect-ratio: 1;
+        padding: 0.5em 2em;
+        margin: 0 auto;
+    }
+
+    main .left-to-right article button {
+        display: none;
+    }
+
+    .left-to-right:first-child {
+        padding: 5em 3em 6em;
+        height: initial;
+    }
+
+    main section:nth-child(2),
+    main section:nth-child(4) {
+        display: block;
+        margin: 20px 0;
+    }
+
+    main section:nth-child(2) button,
+    main section:nth-child(4) button {
+        display: none;
+    }
+
+    main section:nth-child(2) article img,
+    main section:nth-child(4) article img {
+        width: 100%;
+    }
+
+    main section:nth-child(2) {
+        margin-bottom: 0;
+    }
+
+    main section:nth-child(2) article:first-child {
+        margin-left: 4em;
+        margin-right: 2em;
+    }
+
+    main section:nth-child(2) article:last-child {
+        margin-left: 4em;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+        text-align: center;
+    }
+
+    label>:not([value='Send']) {
+        min-width: 70%;
+    }
+
+    main section:nth-child(4) article:last-child {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

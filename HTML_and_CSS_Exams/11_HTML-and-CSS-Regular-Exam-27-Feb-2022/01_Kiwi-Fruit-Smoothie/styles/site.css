@@ -1,0 +1,61 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+.card-container {
+    width: 60em;
+    display: flex;
+    flex-direction: row;
+    margin: 2em auto;
+    background-image: url(../image/image1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding: 2em;
+    gap: 2em    ;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.card-title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px dotted;
+    margin-bottom: .25em;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: italic;
+}
+
+.ingredients span {
+    color: #008000;
+    font-weight: bold;
+}
+
+.energy-values, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+
+.energy-values {
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.card-media {
+    flex: 0 0 50%
+}

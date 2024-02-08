@@ -1,0 +1,259 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+.wrapper {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.site-header, .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    font-size: 2em;
+}
+
+.site-logo span{
+    color: #34b1c4;
+}
+
+.site-header {
+    padding-block: 2em  ;
+}
+
+.nav-link {
+    padding: .5em;
+    margin: .5em 1em;
+
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #34b1c4;
+
+}
+
+.site-banner {
+    background-image: url(../images/slide2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.popups {
+    position: relative;
+    min-height: 40em;
+}
+
+.get-started {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    padding: 1em;
+    color: white;
+    background-color: rgba(0, 0, 0, .35);
+}
+
+.get-started span:not(:last-child){
+    font-size: 2em;
+}
+
+.get-stared-btn{
+    display: inline-block;
+    font-weight: bold;
+    padding: .5em 2em;
+    margin-top: .5em;
+    border-radius: 2em;
+    background-color: #008cba;
+}
+
+.welcome {
+    padding-block: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2[class*='-title'] {
+    font-weight: 500;
+    margin-bottom: .5em;
+    padding-bottom: .25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2[class*='-title']::after{
+    display: block;
+    content: "";
+    border-top: 3px solid #454545 ;
+    width: 3em;
+}
+
+h2.welcome-title::after{
+    border-top: 3px solid #008cba;
+}
+h2.subscribe-title::after{
+    border-top: 3px solid white;
+}
+
+.welcome-btn {
+    display: inline-block;
+    color: white;
+    background-color: #454545;
+    padding: .5em 2em;
+    margin-top: .5em;
+    border-radius: 2em;
+    margin-top: 2em;
+}
+
+.services {
+    padding: 2em;
+    background-color: #eef0f1;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.card {
+    flex: 0 0 33%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+.read-more-btn {
+    display: inline-block;
+    color: white;
+    background-color: #454545;
+    padding: .5em 2em;
+    margin-block: 1em .5em;
+}
+
+.card-content span:last-child {
+    margin-top: auto;
+}
+
+.subscribe {
+    padding: 2em;
+    color: white;
+    background-color: #393f43;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-form {
+    margin-block: 2em;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+input, button {
+    font: inherit
+}
+
+input, button {
+    color: white;
+    border: none;
+    padding: .5em 1em;
+    border-radius: .5em;
+}
+
+input {
+    font-style: italic;
+    background-color: #545a5e;
+    min-width: 25em;
+}
+
+button {
+    background-color: #6bbfff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.about-us {
+    padding: 2em;
+    color: white;
+    background-color: #2f3539;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.information h6 {
+    padding-bottom: .5em;
+}
+
+.information ul:not(ul[class='socials']) {
+    flex-direction: column;
+}
+
+.information ul:not(ul[class='socials']) li{
+    margin-bottom: .5em;
+}
+.information ul[class='socials'] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.information ul[class='socials'] li {
+    font-size: 1.5em;
+    margin-block: .5em;
+} 
+
+.address-container li:nth-child(2){
+    padding: 1em;
+}
+
+.site-footer {
+    color: white;
+    background-color: #262b2f;
+    padding: 1em;
+    text-align: center;
+}
+
+.site-footer span {
+    color: #0c8cba;
+}

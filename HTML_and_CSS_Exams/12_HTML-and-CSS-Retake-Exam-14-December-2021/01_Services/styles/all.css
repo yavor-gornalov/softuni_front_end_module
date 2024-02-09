@@ -1,0 +1,69 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+.site-container {
+    max-width: 80em;
+    margin: 2em auto;
+}
+
+.site-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.site-title span {
+    color: #a4c639;
+}
+
+.site-description,
+.card-text {
+    color: #6c6c6c;
+}
+
+.site-title {
+    font-weight: 500;
+}
+
+.site-description {
+    letter-spacing: .1em;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+    padding-block: 2em;
+}
+
+.card-item {
+    flex: 0 0 33%;
+    background-color: #f7f7f7;
+}
+
+.card-content {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1 0 100%;
+}
+
+
+.card-text {
+    margin-block: 1em;
+}
+.card-content span {
+    margin-top: auto;
+    display: block;
+    margin-block: 1em;
+}
+
+.read-more-btn {
+    color: white;
+    background-color: #a4c639;
+    font-weight: bolder;
+    padding: 1em 2em;
+    margin-block: 1em;
+    border-radius: 2em;
+}

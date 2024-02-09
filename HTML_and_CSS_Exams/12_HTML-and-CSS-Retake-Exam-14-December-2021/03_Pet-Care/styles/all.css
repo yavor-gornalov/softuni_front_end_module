@@ -1,0 +1,223 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+.wrapper {
+    max-width: 70em;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-header {
+    padding: 1em;
+}
+
+.site-nav {
+    justify-content: space-between;
+}
+
+.main-nav {
+    justify-content: flex-end;
+}
+
+
+.nav-item {
+    padding: .25em .5em;
+    margin: .25em .5em;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.top-banner {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 3em;
+    margin-bottom: 5em;
+}
+
+.top-banner-container {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.top-banner-content {
+    flex-basis: 30%;
+    color: white;
+}
+
+.top-banner-content h3,
+.about-us h4 {
+    font-weight: 400;
+}
+
+.top-banner-content p {
+    margin-block: 2em;
+}
+
+.contact-btn,
+.about-us-btn {
+    display: inline-block;
+    padding: 1em 2.5em;
+    border-radius: 2em;
+    margin-block: 1em;
+}
+
+.contact-btn {
+    color: #ff3a0d;
+    background-color: white;
+}
+
+.about-us-btn {
+    color: white;
+    background-color: #ff3a0d;
+    font-weight: bold;
+}
+
+.top-banner-media {
+    height: 100%;
+    width: auto;
+}
+
+.top-banner-media img {
+    width: 125%;
+    height: auto;
+    margin-left: -5em;
+    margin-bottom: -5em;
+}
+
+.services {
+    padding-block: 3em;
+    text-align: center;
+}
+
+.services-list {
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.services>p {
+    max-width: 40em;
+    margin: 0 auto;
+    margin-block: 1em 3em;
+}
+
+.service-item {
+    flex: 0 0 33%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffd7d4;
+    border-radius: .5em;
+    align-items: stretch;
+    padding: 2em;
+}
+
+.service-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    aspect-ratio: 1;
+
+    background-image: url(../images/service-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    margin: 2em auto;
+}
+
+.service-media img {
+    width: 60%;
+    position: absolute;
+}
+
+.service-item>p {
+    margin-block: 2em;
+}
+
+.about-us {
+    padding: 3em;
+}
+
+.about-us-container {
+    align-items: center;
+    gap: 2em;
+}
+
+.about-us-media {
+    flex: 0 0 50%;
+}
+
+.about-us-content {
+    padding: 2em;
+}
+
+.about-us-content p {
+    margin-block: 2em;
+}
+
+.about-us p,
+.services p,
+.footer-content li {
+    color: #61616b;
+}
+
+.bottom-banner {
+    padding: 3em;
+    background-image: url(../images/cats-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 35em;
+    align-items: center;
+}
+
+.bottom-banner-content {
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.bottom-banner-content p {
+    max-width: 40em;
+    margin: 0 auto;
+    padding-block: 2em;
+}
+
+.site-footer {
+    padding: 3em;
+}
+
+.contact span {
+    display: inline-block;
+    margin: .5em;
+}
+
+.footer-content>div {
+    flex: 25%;
+    padding: 1em;
+}
+
+.footer-content ul>li,
+.footer-content h6 {
+    margin-bottom: .5em;
+}
+
+.company>h6>span {
+    display: inline-block;
+    width: 5em;
+}

@@ -1,0 +1,38 @@
+@media (width <= 600px){
+
+    .row,
+    .tm-gallery-page {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .tm-header-inner {
+        padding: 40px 5px;
+    }
+    .tm-nav-li {
+        padding-right: 0;
+    }
+    .tm-section-title {
+        margin: 0 auto 30px;
+    }
+
+    .tm-gallery {
+        margin-left: 0;
+    }
+
+    .tm-gallery-page {
+        margin: 0 auto  ;
+    }
+
+    .tm-cta-section {
+        width: 100%;
+    }
+    
+
+
+}

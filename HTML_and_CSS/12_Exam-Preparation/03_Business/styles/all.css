@@ -1,0 +1,141 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+.wrapper {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.site-nav {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2em 3em;
+}
+
+.site-logo {
+    max-width: 5em;
+}
+
+.nav-item {
+    margin: .5em 0 .5em 1em;
+    text-transform: uppercase;
+}
+
+.top-banner {
+    min-height: 30em;
+}
+
+.top-banner-container {
+    max-width: 35%;
+    padding-block: 2em;
+}
+
+.banner-content {
+    padding-block: 1em;
+}
+
+.objectives, 
+.sponsors {
+    margin-block: 5em;
+}
+
+.aims-container {
+    justify-content: center;
+    gap: 3em;
+}
+
+.aim-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aim-content,
+.sponsors-description {
+    margin-block: 1em 1.5em;
+
+}
+
+.aim-actions {
+    margin-top: auto;
+}
+
+.more-info-btn {
+    display: inline-block;
+    color: rgb(176, 130, 92);
+    border: 2px solid;
+    font-weight: bold;
+    padding: .75em 1.5em;
+}
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsor-links-container {
+    justify-content: center;
+    gap: 4em;
+    margin-block: 3em;
+}
+
+.sponsor-link {
+    flex: 0 0 15%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 50%;
+    padding: 2em;
+    aspect-ratio: 1;
+}
+
+.sponsors h3{
+    color: rgb(176, 130, 92);
+
+}
+
+.sponsors p {
+    color: rgb(113, 101, 103);
+}
+
+.site-footer {
+    background-color: rgb(23, 23, 32);
+}
+
+.site-footer h6 {
+    color: white;
+    margin-block: 1em;
+}
+
+.site-footer ul,
+.site-footer p {
+    color: rgb(179, 166, 168);
+}
+
+.bottom-banner-container {
+    justify-content: space-between;
+    padding-block: 4em 5em;
+}
+
+.bottom-banner-container li {
+    margin-top: .5em;
+}
+
+.bottom-bar-content {
+    padding-block: 1em;
+}

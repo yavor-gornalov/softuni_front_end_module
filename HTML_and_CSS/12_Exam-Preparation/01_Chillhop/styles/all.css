@@ -1,0 +1,67 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+.site-container {
+    max-width: 65em;
+    padding: 1em;
+    margin: 2em auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(24, 129, 182);
+    border: 3px solid black;
+    border-radius: 1em;
+    padding: 2em;
+    gap: 2em
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: .5em
+}
+
+.card-container h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.card-content h5 {
+    text-transform: uppercase;
+}
+
+.card-container p {
+    text-indent: 3em;
+}
+
+.card-container .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links .btn {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: .5em;
+    font-weight: bold;
+    padding: .5em 1.5em;
+    margin: 1em .25em;
+}
+
+.links .btn:first-child  {
+    background-color: rgb(182, 65, 109);
+    color: white;
+}
+
+.card-media {
+    flex: 0 0 40%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

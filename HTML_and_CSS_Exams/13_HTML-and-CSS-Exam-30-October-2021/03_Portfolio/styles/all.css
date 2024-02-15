@@ -1,0 +1,161 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+.wrapper {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+article,
+footer {
+    background-color: #efefef;
+}
+
+article {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+article:not([class='single-photo']):not([class='template']) {
+    padding-block: 5em;
+}
+
+article:last-child {
+    text-align: center;
+}
+
+article:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.top-bar {
+    justify-content: flex-end;
+    padding: 2em 4em;
+}
+
+.main-nav span {
+    margin-left: .5em;
+}
+
+.second-cell {
+    flex: 0 0 55%;
+}
+
+.first-cell {
+    flex: 1 1 auto;
+    padding-right: 5em;
+}
+
+.article-title {
+    margin-bottom: .5em;
+}
+
+.article-text,
+.socials {
+    opacity: .5;
+}
+
+.article-text {
+    font-style: italic;
+    margin-block: 1em;
+}
+
+.article-title span {
+    font-weight: 100;
+    opacity: .5;
+}
+
+.socials li {
+    font-size: 2em;
+    margin-right: .5em;
+}
+
+.socials li span {
+    display: none;
+}
+
+.single-photo img {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.photos-container {
+    position: relative;
+    padding-block: 3em;
+    justify-content: space-between;
+}
+
+.photo-item {
+    flex: 0 0 40%;
+}
+
+.photo-item:nth-child(2) {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.message-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+.input-fields.row input {
+    flex: 1 1 50%
+}
+
+input,
+textarea,
+button {
+    padding: 1em;
+    margin: 1.5em;
+    border: 1px solid black;
+}
+
+input,
+textarea {
+    background-color: #efefef;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+.template .first-cell::after,
+.stairs .first-cell::after {
+    display: block;
+    content: "";
+    height: 4em;
+    border-left: 1px solid;
+}
+
+.contacts .article-title::before {
+    content: "";
+    display: inline-block;
+    width: 2em;
+    height: .4em;
+    margin-right: .5em;
+    border-top: 1px solid;
+}

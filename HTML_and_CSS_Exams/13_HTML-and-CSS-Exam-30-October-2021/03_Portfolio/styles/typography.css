@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+html {
+    font: 20px / 2 'Raleway', serif;
+}
+
+@media (width <=2000px) { html { font-size: 18px; } }
+@media (width <=1800px) { html { font-size: 16px; } }
+@media (width <=1600px) { html { font-size: 14px; } }
+
+h1 { font-size: 3.6em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2.4em; }
+h4 { font-size: 2em; }
+h5 { font-size: 1.6em; }
+h6 { font-size: 1.2em; }
+
+/* h1, h2, h3, h4, h5, h6, header { font-family: Arial, Helvetica, sans-serif; } */

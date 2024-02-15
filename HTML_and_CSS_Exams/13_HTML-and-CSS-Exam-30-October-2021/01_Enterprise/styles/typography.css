@@ -1,0 +1,14 @@
+html {
+    font: 24px / 1.65 'Helvetica', sans-serif;
+}
+
+@media (width <=2000px) { html { font-size: 22px; } }
+@media (width <=1600px) { html { font-size: 20px; } }
+@media (width <=1200px) { html { font-size: 18px; } }
+
+h1 { font-size: 2.8em; }
+h2 { font-size: 2.4em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.6em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.2em; }

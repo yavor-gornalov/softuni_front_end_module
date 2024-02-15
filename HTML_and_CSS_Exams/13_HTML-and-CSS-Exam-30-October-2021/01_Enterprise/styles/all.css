@@ -1,0 +1,65 @@
+@import url(./reset.css);
+@import url(./typography.css);
+
+
+
+.container {
+    max-width: 65em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f6f8f9;
+    border-radius: .5em;
+    margin: 2em auto;
+
+    
+}
+
+.content {
+    flex: 0 0 50%;
+    padding: 4em;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: normal;
+    margin-bottom: .5em;
+}
+
+.subtitle {
+    font-size: .65em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.site-main p {
+    color: #69747e;
+    letter-spacing: .05em;
+}
+
+.button {
+    display: inline-block;
+    font-size: .95em;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: .25em;
+    padding: .75em 1.5em;
+    line-height: 1;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.active {
+    background-color: #786eff;
+    color: white;
+}
+
+.media {
+    margin: 0 2em;
+    max-width: 20em;
+    align-self: flex-end;
+}
+
+
+

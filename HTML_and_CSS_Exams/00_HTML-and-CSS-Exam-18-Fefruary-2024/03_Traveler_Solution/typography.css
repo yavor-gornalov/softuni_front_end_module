@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+/* @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css'); */
+
+  html {
+      font: 20px / 1.5 'Karla', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6, blockquote { font: 18px / 1.2 'Cormorant Infant', serif; }
+
+  @media (width <=2000px) { html { font-size: 18px; }  h1, h2, h3, h4, h5, h6, blockquote { font: 16px; } } 
+  @media (width <=1600px) { html { font-size: 16px; } h1, h2, h3, h4, h5, h6, blockquote { font: 14px; } }
+  @media (width <=1200px) { html { font-size: 14px; } h1, h2, h3, h4, h5, h6, blockquote { font: 12px; } }
+ 
+  h1 { font-size: 5em; }
+  h2 { font-size: 4.2em; }
+  h3 { font-size: 3.6em; }
+  h4 { font-size: 3em; }
+  h5 { font-size: 2.4em; }
+  h6 { font-size: 2em; }
+
+  h1, h2, h3, h4, h5, h6 { font-weight: bold; }

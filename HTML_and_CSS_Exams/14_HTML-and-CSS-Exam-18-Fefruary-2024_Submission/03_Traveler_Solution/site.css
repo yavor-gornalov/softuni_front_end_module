@@ -20,8 +20,8 @@ section {
 .site-header {
     background-image: url(./images/poster.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 40%;
-    background-size:  100% auto;
+    background-position: 50% 50%;
+    background-size:  100%;
     color: #ffffff;
     position: relative;
     z-index: -1;

@@ -1,20 +1,14 @@
 // https://judge.softuni.org/Contests/Compete/Index/3789#2
 
-function charsInRange(firstChar, secondChar) {
+function charsInRange(...range) {
+    range.sort()
+    let [start, end]  = range.map(x => x.charCodeAt(0))
     let characters = [];
-    let first = firstChar.charCodeAt(0);
-    let second = secondChar.charCodeAt(0);
-
-    let start = Math.min(first, second)
-    let end = Math.max(first, second)
-
     for (let idx = start + 1; idx < end; idx++) {
         let char = String.fromCharCode(idx);
         characters.push(char);
     }
-
     console.log(characters.join(" "));
-    console.log("test")
 }
 
 charsInRange("a", "d");
